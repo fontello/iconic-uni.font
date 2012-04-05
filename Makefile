@@ -55,7 +55,7 @@ $(TTFAUTOHINT_BIN):
 
 
 html:
-	./bin/parse_template.py -c ./config.yml ./src/css.mustache ./font/entypo.css
+	./bin/parse_template.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
 	./bin/parse_template.py -c ./config.yml ./src/demo.mustache ./font/demo.html
 
 
