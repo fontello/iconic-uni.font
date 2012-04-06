@@ -10,13 +10,23 @@
 #                                 # params in fontforge
 #   ...                           # http://fontforge.sourceforge.net/python.html
 #
+# transform:                      # Transformations applied to the font,
+#                                 # order is "resize, offset"
+#   resize: 0.68                  # Rescale glyphs around the center of bbox,
+#                                 # resize=1 means no scaling
+#   offset: -0.1                  # Shift glyphs vertically, positive offset
+#                                 # shifts upward, offset=1 means shift upward
+#                                 # to (ascent-descent) units
+#
 # glyphs:
 #   - glyph1_file:                # file name, without extention
 #       code: 0xNNN               # Symbol code 0x - hex
 #       css: icon-gpyph1-name     # For generated CSS
 #       search: [word1, word2]    # Search aliases (array). CSS name will be
 #                                 # included automatically
-#
+#       transform:                # Additional transformation applied to that
+#                                 # glyph
+#         offset: 0.2
 #
 ################################################################################
 #
@@ -29,6 +39,9 @@
 css-prefix: "icon-"
 demo-columns: 4
 
+transform:
+  resize: 1.0
+  offset: 0.0
 
 font:
   version: "1.0"
@@ -51,6 +64,8 @@ glyphs:
 
   - hash:
       code: 0x0023
+      transform:
+        offset: 0.0
 
   - question_mark:
       code: 0x003f
