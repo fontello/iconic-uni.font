@@ -40,8 +40,8 @@ css-prefix: "icon-"
 demo-columns: 4
 
 transform:
-  resize: 1.0
-  offset: 0.0
+  resize: 1.3
+  offset: -0.05
 
 font:
   version: "1.0"
@@ -64,8 +64,8 @@ glyphs:
 
   - hash:
       code: 0x0023
-      transform:
-        offset: 0.0
+      # transform:
+      #  resize: 0.5
 
   - question_mark:
       code: 0x003f
