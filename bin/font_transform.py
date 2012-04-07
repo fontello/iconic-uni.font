@@ -21,17 +21,14 @@ def get_dups(seq):
 
 
 # returns list of tuples:
-# [(code1, {'resize': 1.0, 'offset': 0.0}), (code2, {}), ...]
+# [(code1, {'rescale': 1.0, 'offset': 0.0}), (code2, {}), ...]
 def get_transform_config(config):
     font_transform = config.get('transform', {})
 
     def get_transform_item(glyph):
         name, glyph = glyph.items()[0]
         transform = font_transform.copy()
-        glyph_transform = glyph.get('transform', {})
-        if 'offset' in glyph_transform:
-            offset = transform.get('offset', 0) + glyph_transform.get('offset')
-            transform['offset'] = offset
+        transform.update(glyph.get('transform', {}))
         return (glyph.get('code'), transform)
 
     return [get_transform_item(glyph) for glyph in config['glyphs']]
@@ -71,10 +68,14 @@ if __name__ == '__main__':
     if len(dups) > 0:
         error("Error in file %s: glyph codes aren't unique\n" % args.config)
         for k in sorted(dups.keys()):
-            error("Duplicate code 0x%04x\n" % k)
+            error("Duplicate 'code:' 0x%04x\n" % k)
         sys.exit(1)
 
-    has_transform = lambda x: 'resize' in x or 'offset' in x
+    transform_attrs = set([
+        'baseline', 'rescale', 'offset',
+        'baseline_rel', 'rescale_rel', 'offset_rel'
+    ])
+    has_transform = lambda x: transform_attrs & set(x)
     codes_to_transform = [i for i in transform_config if has_transform(i[1])]
 
     try:
@@ -91,40 +92,69 @@ if __name__ == '__main__':
     if descent:
         font.descent = descent
 
+    # set font encoding so we can select any unicode code point
+    font.encoding = 'UnicodeFull'
+
+    def apply_rescale(glyph, baseline, scale):
+        # bbox: a tuple representing a rectangle (xmin,ymin, xmax,ymax)
+        bbox = glyph.boundingBox()
+
+        # center of bbox
+        x, y = (bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2
+
+        # scale origin point
+        sx, sy = 0, (font.ascent + font.descent) * baseline - font.descent
+
+        # move scale origin point to (0, 0)
+        translate_matrix = psMat.translate(-sx, -sy)
+        glyph.transform(translate_matrix)
+
+        # scale around (0, 0)
+        scale_matrix = psMat.scale(scale)
+        glyph.transform(scale_matrix)
+
+        # scale width and vwidth as well
+        glyph.width *= scale
+        glyph.vwidth *= scale
+
+        # move scale origin point back to its old position
+        translate_matrix = psMat.translate(sx, sy)
+        glyph.transform(translate_matrix)
+
+    def apply_offset(glyph, offset):
+        # shift the selected glyph vertically
+        offset_y = offset * (font.ascent + font.descent)
+        translate_matrix = psMat.translate(0, offset_y)
+        glyph.transform(translate_matrix)
+
+    default_baseline = font.descent / (font.ascent + font.descent)
+
     # apply transformations
     for code, transform in codes_to_transform:
         try:
-            font[code]
+            glyph = font[code]
         except TypeError:
             error("Warning: no such glyph (code=0x%04x)\n" % code)
             continue
 
-        font.selection.select(("unicode",), code)
+        #font.selection.select(("unicode",), code)
 
-        if 'resize' in transform:
-            # bbox: a tuple representing a rectangle (xmin,ymin, xmax,ymax)
-            bbox = font[code].boundingBox()
-
-            # center of bbox
-            x, y = (bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2
-
-            # move center of bbox to (0, 0)
-            translate_matrix = psMat.translate(-x, -y)
-            font.transform(translate_matrix)
-
-            # scale around (0, 0)
-            scale_matrix = psMat.scale(transform['resize'])
-            font.transform(scale_matrix)
-
-            # move center of bbox back to its old position
-            translate_matrix = psMat.translate(x, y)
-            font.transform(translate_matrix)
+        if 'rescale' in transform:
+            baseline = transform.get('baseline', default_baseline)
+            scale    = transform['rescale']
+            apply_rescale(glyph, baseline, scale)
 
         if 'offset' in transform:
-            # shift the selected glyph vertically
-            offset = transform['offset'] * (font.ascent + font.descent)
-            translate_matrix = psMat.translate(0, offset)
-            font.transform(translate_matrix)
+            apply_offset(glyph, transform['offset'])
+
+        if 'rescale_rel' in transform:
+            baseline = transform.get('baseline_rel', default_baseline)
+            scale    = transform['rescale_rel']
+            apply_rescale(glyph, baseline, scale)
+
+        if 'offset_rel' in transform:
+            apply_offset(glyph, transform['offset_rel'])
+
     try:
         font.generate(args.dst_font)
     except:

@@ -8,25 +8,44 @@
 #
 # font:                           # all vars from here will be used as font
 #                                 # params in fontforge
-#   ...                           # http://fontforge.sourceforge.net/python.html
+#                                 # http://fontforge.sourceforge.net/python.html
+#   version: "1.0"
 #
-# transform:                      # Transformations applied to the font,
-#                                 # order is "resize, offset"
-#   resize: 0.68                  # Rescale glyphs around the center of bbox,
-#                                 # resize=1 means no scaling
-#   offset: -0.1                  # Shift glyphs vertically, positive offset
-#                                 # shifts upward, offset=1 means shift upward
-#                                 # to (ascent-descent) units
+#   # use !!!small!!! letters a-z, or Opera will fail under OS X
+#   # fontname will be also used as file name.
+#   fontname: myfont
+#
+#   fullname: MyFont
+#   familyname: Myfont
+#
+#   copyright: Copyright (C) 2012 by xxxxxxxx
+#
+#   ascent: 1638
+#   descent: 410
+#   weight: Medium
+#
+#
+#
+# # Optional. You can apply global resize + offset to all font glyphs.
+# # Param values ar 0..1, where 1 = 100%. 
+# #
+# transform:
+#   baseline: 0.2                 # baseline for rescale. Default value calculated
+#                                 # from ascent/decsent
+#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   offset: -0.1                  # shift up/down
 #
 # glyphs:
 #   - glyph1_file:                # file name, without extention
-#       code: 0xNNN               # Symbol code 0x - hex
+#       from: 0xNNN               # Symbol code 0x - hex, original
+#       code: 0xNNN               # Symbol code 0x - hex, remapped
 #       css: icon-gpyph1-name     # For generated CSS
 #       search: [word1, word2]    # Search aliases (array). CSS name will be
 #                                 # included automatically
-#       transform:                # Additional transformation applied to that
-#                                 # glyph
-#         offset: 0.2
+#
+#       transform:                # personal glyph transformation.
+#         rescale_rel: 0.9        # *_rel - applyed after global.
+#         offset: 0.2             # without *_rel - override global
 #
 ################################################################################
 #
@@ -40,7 +59,7 @@ css-prefix: "icon-"
 demo-columns: 4
 
 transform:
-  resize: 1.3
+  rescale: 1.3
   offset: -0.05
 
 font:
@@ -65,7 +84,7 @@ glyphs:
   - hash:
       code: 0x0023
       # transform:
-      #  resize: 0.5
+      #  rescale: 0.5
 
   - question_mark:
       code: 0x003f
