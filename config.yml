@@ -3,8 +3,9 @@
 # Format is descriped below.
 #
 #
-# css-prefix: "icon-"             # prefix for css-generated classes
-# demo-columns: 4                 # used for html demo page generation
+# demo:
+#   css_prefix: "icon-"           # prefix for css-generated classes
+#   columns: 4                    # used for html demo page generation
 #
 # font:                           # all vars from here will be used as font
 #                                 # params in fontforge
@@ -55,8 +56,9 @@
 #
 
 
-css-prefix: "icon-"
-demo-columns: 4
+demo:
+  css_prefix: "icon-"
+  columns: 4
 
 transform:
   rescale: 1.3
@@ -81,515 +83,514 @@ font:
 
 glyphs:
 
-  - hash:
-      code: 0x0023
-      # transform:
-      #  rescale: 0.5
+  - file: hash
+    code: 0x0023
+    #transform: {rescale: 0.5}
 
-  - question_mark:
-      code: 0x003f
+  - file: question_mark
+    code: 0x003f
 
-  - at:
-      code: 0x0040
+  - file: at
+    code: 0x0040
 
-  - pilcrow:
-      code: 0x00b6
+  - file: pilcrow
+    code: 0x00b6
 
-  - info:
-      code: 0x2139
+  - file: info
+    code: 0x2139
 
-  - arrow_left:
-      code: 0x2190
+  - file: arrow_left
+    code: 0x2190
 
-  - arrow_up:
-      code: 0x2191
+  - file: arrow_up
+    code: 0x2191
 
-  - arrow_right:
-      code: 0x2192
+  - file: arrow_right
+    code: 0x2192
 
-  - arrow_down:
-      code: 0x2193
+  - file: arrow_down
+    code: 0x2193
 
-  - home:
-      code: 0x2302
+  - file: home
+    code: 0x2302
 
-  - sun_stroke:
-      code: 0x263c
+  - file: sun_stroke
+    code: 0x263c
 
-  - sun_fill:
-      code: 0x2600
+  - file: sun_fill
+    code: 0x2600
 
-  - cloud:
-      code: 0x2601
+  - file: cloud
+    code: 0x2601
 
-  - umbrella:
-      code: 0x2602
+  - file: umbrella
+    code: 0x2602
 
-  - star:
-      code: 0x2605
+  - file: star
+    code: 0x2605
 
-  - moon_stroke:
-      code: 0x263e
+  - file: moon_stroke
+    code: 0x263e
 
-  - moon_fill:
-      code: 0xe07a
+  - file: moon_fill
+    code: 0xe07a
 
-  - heart_stroke:
-      code: 0x2661
+  - file: heart_stroke
+    code: 0x2661
 
-  - heart_fill:
-      code: 0x2665
+  - file: heart_fill
+    code: 0x2665
 
-  - cog:
-      code: 0x2699
+  - file: cog
+    code: 0x2699
 
-  - bolt:
-      code: 0x26a1
+  - file: bolt
+    code: 0x26a1
 
-  - key_stroke:
-      code: 0x26bf
+  - file: key_stroke
+    code: 0x26bf
 
-  - key_fill:
-      code: 0x1f511
+  - file: key_fill
+    code: 0x1f511
 
-  - rain:
-      code: 0x26c6
+  - file: rain
+    code: 0x26c6
 
-  - denied:
-      code: 0x1f6ab
+  - file: denied
+    code: 0x1f6ab
 
-  - mail:
-      code: 0x2709
+  - file: mail
+    code: 0x2709
 
-  - pen:
-      code: 0x270e
+  - file: pen
+    code: 0x270e
 
-  - check:
-      code: 0x2713
+  - file: check
+    code: 0x2713
 
-  - check_alt:
-      code: 0x2714
+  - file: check_alt
+    code: 0x2714
 
-  - x:
-      code: 0x2717
+  - file: x
+    code: 0x2717
 
-  - x_alt:
-      code: 0x2718
+  - file: x_alt
+    code: 0x2718
 
-  - left_quote:
-      code: 0x275d
+  - file: left_quote
+    code: 0x275d
 
-  - right_quote:
-      code: 0x275e
+  - file: right_quote
+    code: 0x275e
 
-  - plus:
-      code: 0x2795
+  - file: plus
+    code: 0x2795
 
-  - minus:
-      code: 0x2796
+  - file: minus
+    code: 0x2796
 
-  - curved_arrow:
-      code: 0x2935
+  - file: curved_arrow
+    code: 0x2935
 
-  - document_alt_stroke:
-      code: 0x1f4c4
+  - file: document_alt_stroke
+    code: 0x1f4c4
 
-  - document_alt_fill:
-      code: 0xe080
+  - file: document_alt_fill
+    code: 0xe080
 
-  - calendar:
-      code: 0x1f4c5
+  - file: calendar
+    code: 0x1f4c5
 
-  - map_pin_alt:
-      code: 0xe002
+  - file: map_pin_alt
+    code: 0xe002
 
-  - comment_alt1_stroke:
-      code: 0xe003
+  - file: comment_alt1_stroke
+    code: 0xe003
 
-  - comment_alt1_fill:
-      code: 0xe083
+  - file: comment_alt1_fill
+    code: 0xe083
 
-  - comment_alt2_stroke:
-      code: 0xe004
+  - file: comment_alt2_stroke
+    code: 0xe004
 
-  - comment_alt2_fill:
-      code: 0xe084
+  - file: comment_alt2_fill
+    code: 0xe084
 
-  - pen_alt_stroke:
-      code: 0xe005
+  - file: pen_alt_stroke
+    code: 0xe005
 
-  - pen_alt_fill:
-      code: 0xe085
+  - file: pen_alt_fill
+    code: 0xe085
 
-  - pen_alt2:
-      code: 0xe006
+  - file: pen_alt2
+    code: 0xe006
 
-  - chat_alt_stroke:
-      code: 0xe007
+  - file: chat_alt_stroke
+    code: 0xe007
 
-  - chat_alt_fill:
-      code: 0xe087
+  - file: chat_alt_fill
+    code: 0xe087
 
-  - plus_alt:
-      code: 0xe008
+  - file: plus_alt
+    code: 0xe008
 
-  - minus_alt:
-      code: 0xe009
+  - file: minus_alt
+    code: 0xe009
 
-  - bars_alt:
-      code: 0xe00a
+  - file: bars_alt
+    code: 0xe00a
 
-  - book_alt:
-      code: 0x1f4d4
+  - file: book_alt
+    code: 0x1f4d4
 
-  - aperture_alt:
-      code: 0xe00c
+  - file: aperture_alt
+    code: 0xe00c
 
-  - beaker_alt:
-      code: 0xe010
+  - file: beaker_alt
+    code: 0xe010
 
-  - left_quote_alt:
-      code: 0xe011
+  - file: left_quote_alt
+    code: 0xe011
 
-  - right_quote_alt:
-      code: 0xe012
+  - file: right_quote_alt
+    code: 0xe012
 
-  - arrow_left_alt1:
-      code: 0xe013
+  - file: arrow_left_alt1
+    code: 0xe013
 
-  - arrow_up_alt1:
-      code: 0xe014
+  - file: arrow_up_alt1
+    code: 0xe014
 
-  - arrow_right_alt1:
-      code: 0xe015
+  - file: arrow_right_alt1
+    code: 0xe015
 
-  - arrow_down_alt1:
-      code: 0xe016
+  - file: arrow_down_alt1
+    code: 0xe016
 
-  - arrow_left_alt2:
-      code: 0xe017
+  - file: arrow_left_alt2
+    code: 0xe017
 
-  - arrow_up_alt2:
-      code: 0xe018
+  - file: arrow_up_alt2
+    code: 0xe018
 
-  - arrow_right_alt2:
-      code: 0xe019
+  - file: arrow_right_alt2
+    code: 0xe019
 
-  - arrow_down_alt2:
-      code: 0xe01a
+  - file: arrow_down_alt2
+    code: 0xe01a
 
-  - brush:
-      code: 0xe01b
+  - file: brush
+    code: 0xe01b
 
-  - brush_alt:
-      code: 0xe01c
+  - file: brush_alt
+    code: 0xe01c
 
-  - eyedropper:
-      code: 0xe01e
+  - file: eyedropper
+    code: 0xe01e
 
-  - layers:
-      code: 0xe01f
+  - file: layers
+    code: 0xe01f
 
-  - layers_alt:
-      code: 0xe020
+  - file: layers_alt
+    code: 0xe020
 
-  - compass:
-      code: 0xe021
+  - file: compass
+    code: 0xe021
 
-  - award_stroke:
-      code: 0xe022
+  - file: award_stroke
+    code: 0xe022
 
-  - award_fill:
-      code: 0xe0a2
+  - file: award_fill
+    code: 0xe0a2
 
-  - beaker:
-      code: 0xe023
+  - file: beaker
+    code: 0xe023
 
-  - steering_wheel:
-      code: 0xe024
+  - file: steering_wheel
+    code: 0xe024
 
-  - eye:
-      code: 0xe025
+  - file: eye
+    code: 0xe025
 
-  - aperture:
-      code: 0xe026
+  - file: aperture
+    code: 0xe026
 
-  - image:
-      code: 0xe027
+  - file: image
+    code: 0xe027
 
-  - chart:
-      code: 0xe028
+  - file: chart
+    code: 0xe028
 
-  - chart_alt:
-      code: 0xe029
+  - file: chart_alt
+    code: 0xe029
 
-  - target:
-      code: 0x1f3af
+  - file: target
+    code: 0x1f3af
 
-  - tag_stroke:
-      code: 0xe02b
+  - file: tag_stroke
+    code: 0xe02b
 
-  - tag_fill:
-      code: 0xe0ab
+  - file: tag_fill
+    code: 0xe0ab
 
-  - rss:
-      code: 0xe02c
+  - file: rss
+    code: 0xe02c
 
-  - rss_alt:
-      code: 0xe02d
+  - file: rss_alt
+    code: 0xe02d
 
-  - share:
-      code: 0xe02e
+  - file: share
+    code: 0xe02e
 
-  - undo:
-      code: 0x21b6
+  - file: undo
+    code: 0x21b6
 
-  - reload:
-      code: 0x21bb
+  - file: reload
+    code: 0x21bb
 
-  - reload_alt:
-      code: 0xe031
+  - file: reload_alt
+    code: 0xe031
 
-  - loop_alt1:
-      code: 0xe032
+  - file: loop_alt1
+    code: 0xe032
 
-  - loop_alt2:
-      code: 0xe033
+  - file: loop_alt2
+    code: 0xe033
 
-  - loop_alt3:
-      code: 0xe034
+  - file: loop_alt3
+    code: 0xe034
 
-  - loop_alt4:
-      code: 0xe035
+  - file: loop_alt4
+    code: 0xe035
 
-  - spin:
-      code: 0xe036
+  - file: spin
+    code: 0xe036
 
-  - spin_alt:
-      code: 0xe037
+  - file: spin_alt
+    code: 0xe037
 
-  - move_horizontal:
-      code: 0xe038
+  - file: move_horizontal
+    code: 0xe038
 
-  - move_horizontal_alt1:
-      code: 0xe039
+  - file: move_horizontal_alt1
+    code: 0xe039
 
-  - move_horizontal_alt2:
-      code: 0xe03a
+  - file: move_horizontal_alt2
+    code: 0xe03a
 
-  - move_vertical:
-      code: 0xe03b
+  - file: move_vertical
+    code: 0xe03b
 
-  - move_vertical_alt1:
-      code: 0xe03c
+  - file: move_vertical_alt1
+    code: 0xe03c
 
-  - move_vertical_alt2:
-      code: 0xe03d
+  - file: move_vertical_alt2
+    code: 0xe03d
 
-  - move:
-      code: 0xe03e
+  - file: move
+    code: 0xe03e
 
-  - move_alt1:
-      code: 0xe03f
+  - file: move_alt1
+    code: 0xe03f
 
-  - move_alt2:
-      code: 0xe040
+  - file: move_alt2
+    code: 0xe040
 
-  - transfer:
-      code: 0xe041
+  - file: transfer
+    code: 0xe041
 
-  - download:
-      code: 0xe042
+  - file: download
+    code: 0xe042
 
-  - upload:
-      code: 0xe043
+  - file: upload
+    code: 0xe043
 
-  - cloud_download:
-      code: 0xe044
+  - file: cloud_download
+    code: 0xe044
 
-  - cloud_upload:
-      code: 0xe045
+  - file: cloud_upload
+    code: 0xe045
 
-  - fork:
-      code: 0x2387
+  - file: fork
+    code: 0x2387
 
-  - play:
-      code: 0x25bb
+  - file: play
+    code: 0x25bb
 
-  - play_alt:
-      code: 0xe048
+  - file: play_alt
+    code: 0xe048
 
-  - pause:
-      code: 0x2389
+  - file: pause
+    code: 0x2389
 
-  - stop:
-      code: 0x25aa
+  - file: stop
+    code: 0x25aa
 
-  - eject:
-      code: 0x23cf
+  - file: eject
+    code: 0x23cf
 
-  - first:
-      code: 0x23ee
+  - file: first
+    code: 0x23ee
 
-  - last:
-      code: 0x23ed
+  - file: last
+    code: 0x23ed
 
-  - fullscreen:
-      code: 0xe04e
+  - file: fullscreen
+    code: 0xe04e
 
-  - fullscreen_alt:
-      code: 0xe04f
+  - file: fullscreen_alt
+    code: 0xe04f
 
-  - fullscreen_exit:
-      code: 0xe050
+  - file: fullscreen_exit
+    code: 0xe050
 
-  - fullscreen_exit_alt:
-      code: 0xe051
+  - file: fullscreen_exit_alt
+    code: 0xe051
 
-  - equalizer:
-      code: 0xe052
+  - file: equalizer
+    code: 0xe052
 
-  - article:
-      code: 0xe053
+  - file: article
+    code: 0xe053
 
-  - read_more:
-      code: 0xe054
+  - file: read_more
+    code: 0xe054
 
-  - list:
-      code: 0xe055
+  - file: list
+    code: 0xe055
 
-  - list_nested:
-      code: 0xe056
+  - file: list_nested
+    code: 0xe056
 
-  - cursor:
-      code: 0xe057
+  - file: cursor
+    code: 0xe057
 
-  - dial:
-      code: 0xe058
+  - file: dial
+    code: 0xe058
 
-  - new_window:
-      code: 0xe059
+  - file: new_window
+    code: 0xe059
 
-  - trash_stroke:
-      code: 0xe05a
+  - file: trash_stroke
+    code: 0xe05a
 
-  - trash_fill:
-      code: 0xe0da
+  - file: trash_fill
+    code: 0xe0da
 
-  - battery_half:
-      code: 0xe05b
+  - file: battery_half
+    code: 0xe05b
 
-  - battery_empty:
-      code: 0xe05c
+  - file: battery_empty
+    code: 0xe05c
 
-  - battery_charging:
-      code: 0xe05d
+  - file: battery_charging
+    code: 0xe05d
 
-  - chat:
-      code: 0xe05e
+  - file: chat
+    code: 0xe05e
 
-  - mic:
-      code: 0x1f3a4
+  - file: mic
+    code: 0x1f3a4
 
-  - movie:
-      code: 0x1f3ac
+  - file: movie
+    code: 0x1f3ac
 
-  - headphones:
-      code: 0x1f3a7
+  - file: headphones
+    code: 0x1f3a7
 
-  - user:
-      code: 0x1f464
+  - file: user
+    code: 0x1f464
 
-  - lightbulb:
-      code: 0x1f4a1
+  - file: lightbulb
+    code: 0x1f4a1
 
-  - cd:
-      code: 0x1f4bf
+  - file: cd
+    code: 0x1f4bf
 
-  - folder_stroke:
-      code: 0xe065
+  - file: folder_stroke
+    code: 0xe065
 
-  - folder_fill:
-      code: 0xe0e5
+  - file: folder_fill
+    code: 0xe0e5
 
-  - document_stroke:
-      code: 0x1f4c3
+  - file: document_stroke
+    code: 0x1f4c3
 
-  - document_fill:
-      code: 0xe0e6
+  - file: document_fill
+    code: 0xe0e6
 
-  - pin:
-      code: 0x1f4cc
+  - file: pin
+    code: 0x1f4cc
 
-  - map_pin_stroke:
-      code: 0xe068
+  - file: map_pin_stroke
+    code: 0xe068
 
-  - map_pin_fill:
-      code: 0xe0e8
+  - file: map_pin_fill
+    code: 0xe0e8
 
-  - book:
-      code: 0x1f4d5
+  - file: book
+    code: 0x1f4d5
 
-  - book_alt2:
-      code: 0x1f4d6
+  - file: book_alt2
+    code: 0x1f4d6
 
-  - box:
-      code: 0xe06b
+  - file: box
+    code: 0xe06b
 
-  - calendar_alt_stroke:
-      code: 0x1f4c6
+  - file: calendar_alt_stroke
+    code: 0x1f4c6
 
-  - calendar_alt_fill:
-      code: 0xe0ec
+  - file: calendar_alt_fill
+    code: 0xe0ec
 
-  - comment_stroke:
-      code: 0xe06d
+  - file: comment_stroke
+    code: 0xe06d
 
-  - comment_fill:
-      code: 0xe0ed
+  - file: comment_fill
+    code: 0xe0ed
 
-  - iphone:
-      code: 0xe06e
+  - file: iphone
+    code: 0xe06e
 
-  - bars:
-      code: 0xe06f
+  - file: bars
+    code: 0xe06f
 
-  - camera:
-      code: 0x1f4f7
+  - file: camera
+    code: 0x1f4f7
 
-  - volume_mute:
-      code: 0x1f507
+  - file: volume_mute
+    code: 0x1f507
 
-  - volume:
-      code: 0x1f50a
+  - file: volume
+    code: 0x1f50a
 
-  - battery_full:
-      code: 0xe073
+  - file: battery_full
+    code: 0xe073
 
-  - magnifying_glass:
-      code: 0x1f50e
+  - file: magnifying_glass
+    code: 0x1f50e
 
-  - lock_stroke:
-      code: 0xe075
+  - file: lock_stroke
+    code: 0xe075
 
-  - lock_fill:
-      code: 0x1f512
+  - file: lock_fill
+    code: 0x1f512
 
-  - unlock_stroke:
-      code: 0xe076
+  - file: unlock_stroke
+    code: 0xe076
 
-  - unlock_fill:
-      code: 0x1f513
+  - file: unlock_fill
+    code: 0x1f513
 
-  - link:
-      code: 0x1f517
+  - file: link
+    code: 0x1f517
 
-  - wrench:
-      code: 0x1f527
+  - file: wrench
+    code: 0x1f527
 
-  - clock:
-      code: 0x1f554
+  - file: clock
+    code: 0x1f554
 
-  - paperclip:
-      code: 0xe08a
+  - file: paperclip
+    code: 0xe08a
 
