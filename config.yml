@@ -37,16 +37,16 @@
 #   offset: -0.1                  # shift up/down
 #
 # glyphs:
-#   - glyph1_file:                # file name, without extention
-#       from: 0xNNN               # Symbol code 0x - hex, original
-#       code: 0xNNN               # Symbol code 0x - hex, remapped
-#       css: icon-gpyph1-name     # For generated CSS
-#       search: [word1, word2]    # Search aliases (array). CSS name will be
+#   - file: glyph1_file           # file name, without extention
+#     from: 0xNNN                 # Symbol code 0x - hex, original
+#     code: 0xNNN                 # Symbol code 0x - hex, remapped
+#     css: icon-gpyph1-name       # For generated CSS
+#     search: [word1, word2]      # Search aliases (array). CSS name will be
 #                                 # included automatically
 #
-#       transform:                # personal glyph transformation.
-#         rescale_rel: 0.9        # *_rel - applyed after global.
-#         offset: 0.2             # without *_rel - override global
+#     transform:                  # personal glyph transformation.
+#       rescale_rel: 0.9          # *_rel - applyed after global.
+#       offset: 0.2               # without *_rel - override global
 #
 ################################################################################
 #
