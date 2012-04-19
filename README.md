@@ -20,7 +20,7 @@ License
 
 ### Icons, font
 
-Artwork (and original font) by P.J. Onory:
+Artwork (and original font) by P.J. Onori:
 
 - [homepage](http://somerandomdude.com/work/iconic/)
 - [sources @ github](https://github.com/somerandomdude/Iconic)
@@ -33,12 +33,7 @@ Font is distributed under
 [SIL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) licence.
 
 
-### Scripts
+### Scripting
 
-Code (except `./support` folder) by [Nodeca](https://github.com/nodeca) team,
-distributed under MIT licence. `./support` folder contains 3d-party software,
-see README there.
+This project uses [font-builder](https://github.com/fontello/font-builder) scripts to generate data.
 
-Special thanks to Werner Lemberg, author of
-[ttfautohint](http://www.freetype.org/ttfautohint/) utility,
-used in this project.
