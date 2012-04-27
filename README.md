@@ -13,7 +13,7 @@ Difference from original:
 - mapped to fit unicode 6.1 standard (where possible)
 - hinted with `ttfautohint`
 - better demo page + css
-
+- hidden some symbols, unclear at small sizes (see tail of config file)
 
 License
 -------

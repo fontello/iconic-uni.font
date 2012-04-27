@@ -110,514 +110,833 @@ font:
 
 glyphs:
 
-  - file: hash
-    code: 0x0023
-    #transform: {rescale: 0.5}
-
-  - file: question_mark
-    code: 0x003f
-
-  - file: at
-    code: 0x0040
-
-  - file: pilcrow
-    code: 0x00b6
-
-  - file: info
-    code: 0x2139
-
-  - file: arrow_left
-    code: 0x2190
-
-  - file: arrow_up
-    code: 0x2191
-
-  - file: arrow_right
-    code: 0x2192
-
-  - file: arrow_down
-    code: 0x2193
-
-  - file: home
-    code: 0x2302
-
-  - file: sun_stroke
-    code: 0x263c
-
-  - file: sun_fill
-    code: 0x2600
-
-  - file: cloud
-    code: 0x2601
-
-  - file: umbrella
-    code: 0x2602
-
-  - file: star
-    code: 0x2605
-
-  - file: moon_stroke
-    code: 0x263e
-
-  - file: moon_fill
-    code: 0xe07a
-
-  - file: heart_stroke
-    code: 0x2661
-
-  - file: heart_fill
-    code: 0x2665
-
-  - file: cog
-    code: 0x2699
-
-  - file: bolt
-    code: 0x26a1
-
-  - file: key_stroke
-    code: 0x26bf
-
-  - file: key_fill
-    code: 0x1f511
-
-  - file: rain
-    code: 0x26c6
-
-  - file: denied
-    code: 0x1f6ab
-
-  - file: mail
-    code: 0x2709
-
-  - file: pen
-    code: 0x270e
-
-  - file: check
-    code: 0x2713
-
-  - file: check_alt
-    code: 0x2714
-
-  - file: x
-    code: 0x2717
-
-  - file: x_alt
-    code: 0x2718
-
-  - file: left_quote
-    code: 0x275d
-
-  - file: right_quote
-    code: 0x275e
-
-  - file: plus
-    code: 0x2795
-
-  - file: minus
-    code: 0x2796
-
-  - file: curved_arrow
-    code: 0x2935
-
-  - file: document_alt_stroke
-    code: 0x1f4c4
-
-  - file: document_alt_fill
-    code: 0xe080
-
-  - file: calendar
-    code: 0x1f4c5
-
-  - file: map_pin_alt
-    code: 0xe002
-
-  - file: comment_alt1_stroke
-    code: 0xe003
-
-  - file: comment_alt1_fill
-    code: 0xe083
-
-  - file: comment_alt2_stroke
-    code: 0xe004
-
-  - file: comment_alt2_fill
-    code: 0xe084
-
-  - file: pen_alt_stroke
-    code: 0xe005
-
-  - file: pen_alt_fill
-    code: 0xe085
-
-  - file: pen_alt2
-    code: 0xe006
-
-  - file: chat_alt_stroke
-    code: 0xe007
-
-  - file: chat_alt_fill
-    code: 0xe087
-
-  - file: plus_alt
-    code: 0xe008
-
-  - file: minus_alt
-    code: 0xe009
-
-  - file: bars_alt
-    code: 0xe00a
-
-  - file: book_alt
-    code: 0x1f4d4
-
-  - file: aperture_alt
-    code: 0xe00c
-
-  - file: beaker_alt
-    code: 0xe010
-
-  - file: left_quote_alt
-    code: 0xe011
-
-  - file: right_quote_alt
-    code: 0xe012
-
-  - file: arrow_left_alt1
-    code: 0xe013
-
-  - file: arrow_up_alt1
-    code: 0xe014
-
-  - file: arrow_right_alt1
-    code: 0xe015
-
-  - file: arrow_down_alt1
-    code: 0xe016
-
-  - file: arrow_left_alt2
-    code: 0xe017
-
-  - file: arrow_up_alt2
-    code: 0xe018
-
-  - file: arrow_right_alt2
-    code: 0xe019
-
-  - file: arrow_down_alt2
-    code: 0xe01a
-
-  - file: brush
-    code: 0xe01b
-
-  - file: brush_alt
-    code: 0xe01c
-
-  - file: eyedropper
-    code: 0xe01e
-
-  - file: layers
-    code: 0xe01f
-
-  - file: layers_alt
-    code: 0xe020
-
-  - file: compass
-    code: 0xe021
-
-  - file: award_stroke
-    code: 0xe022
-
-  - file: award_fill
-    code: 0xe0a2
-
-  - file: beaker
-    code: 0xe023
-
-  - file: steering_wheel
-    code: 0xe024
-
-  - file: eye
-    code: 0xe025
-
-  - file: aperture
-    code: 0xe026
-
-  - file: image
-    code: 0xe027
-
-  - file: chart
-    code: 0xe028
-
-  - file: chart_alt
-    code: 0xe029
-
-  - file: target
-    code: 0x1f3af
-
-  - file: tag_stroke
-    code: 0xe02b
-
-  - file: tag_fill
-    code: 0xe0ab
-
-  - file: rss
-    code: 0xe02c
-
-  - file: rss_alt
-    code: 0xe02d
-
-  - file: share
-    code: 0xe02e
-
-  - file: undo
-    code: 0x21b6
-
-  - file: reload
-    code: 0x21bb
-
-  - file: reload_alt
-    code: 0xe031
-
-  - file: loop_alt1
-    code: 0xe032
-
-  - file: loop_alt2
-    code: 0xe033
-
-  - file: loop_alt3
-    code: 0xe034
-
-  - file: loop_alt4
-    code: 0xe035
-
-  - file: spin
-    code: 0xe036
-
-  - file: spin_alt
-    code: 0xe037
-
-  - file: move_horizontal
-    code: 0xe038
-
-  - file: move_horizontal_alt1
-    code: 0xe039
-
-  - file: move_horizontal_alt2
-    code: 0xe03a
-
-  - file: move_vertical
-    code: 0xe03b
-
-  - file: move_vertical_alt1
-    code: 0xe03c
-
-  - file: move_vertical_alt2
-    code: 0xe03d
-
-  - file: move
-    code: 0xe03e
-
-  - file: move_alt1
-    code: 0xe03f
-
-  - file: move_alt2
-    code: 0xe040
-
-  - file: transfer
-    code: 0xe041
-
-  - file: download
-    code: 0xe042
-
-  - file: upload
-    code: 0xe043
-
-  - file: cloud_download
-    code: 0xe044
-
-  - file: cloud_upload
-    code: 0xe045
-
-  - file: fork
-    code: 0x2387
-
-  - file: play
-    code: 0x25bb
-
-  - file: play_alt
-    code: 0xe048
-
-  - file: pause
-    code: 0x2389
-
-  - file: stop
-    code: 0x25aa
-
-  - file: eject
-    code: 0x23cf
-
-  - file: first
-    code: 0x23ee
-
-  - file: last
-    code: 0x23ed
-
-  - file: fullscreen
-    code: 0xe04e
-
-  - file: fullscreen_alt
-    code: 0xe04f
-
-  - file: fullscreen_exit
-    code: 0xe050
-
-  - file: fullscreen_exit_alt
-    code: 0xe051
-
-  - file: equalizer
-    code: 0xe052
-
-  - file: article
-    code: 0xe053
-
-  - file: read_more
-    code: 0xe054
-
-  - file: list
-    code: 0xe055
-
-  - file: list_nested
-    code: 0xe056
-
-  - file: cursor
-    code: 0xe057
-
-  - file: dial
-    code: 0xe058
-
-  - file: new_window
-    code: 0xe059
-
-  - file: trash_stroke
-    code: 0xe05a
-
-  - file: trash_fill
-    code: 0xe0da
-
-  - file: battery_half
-    code: 0xe05b
-
-  - file: battery_empty
-    code: 0xe05c
-
-  - file: battery_charging
-    code: 0xe05d
-
-  - file: chat
-    code: 0xe05e
-
-  - file: mic
-    code: 0x1f3a4
-
-  - file: movie
-    code: 0x1f3ac
-
-  - file: headphones
-    code: 0x1f3a7
-
-  - file: user
-    code: 0x1f464
-
-  - file: lightbulb
-    code: 0x1f4a1
-
-  - file: cd
-    code: 0x1f4bf
-
-  - file: folder_stroke
-    code: 0xe065
-
-  - file: folder_fill
-    code: 0xe0e5
-
-  - file: document_stroke
-    code: 0x1f4c3
-
-  - file: document_fill
-    code: 0xe0e6
-
-  - file: pin
-    code: 0x1f4cc
-
-  - file: map_pin_stroke
-    code: 0xe068
-
-  - file: map_pin_fill
-    code: 0xe0e8
-
-  - file: book
-    code: 0x1f4d5
-
-  - file: book_alt2
-    code: 0x1f4d6
-
-  - file: box
-    code: 0xe06b
-
-  - file: calendar_alt_stroke
-    code: 0x1f4c6
-
-  - file: calendar_alt_fill
-    code: 0xe0ec
-
-  - file: comment_stroke
-    code: 0xe06d
-
-  - file: comment_fill
-    code: 0xe0ed
-
-  - file: iphone
-    code: 0xe06e
-
-  - file: bars
-    code: 0xe06f
-
-  - file: camera
-    code: 0x1f4f7
-
-  - file: volume_mute
-    code: 0x1f507
-
-  - file: volume
-    code: 0x1f50a
-
-  - file: battery_full
-    code: 0xe073
 
   - file: magnifying_glass
     code: 0x1f50e
+    css: search
+    search: [search, find]
 
-  - file: lock_stroke
-    code: 0xe075
+  - file: mail
+    code: 0x2709
+    css: mail
+    search: [mail, email]
 
-  - file: lock_fill
-    code: 0x1f512
 
-  - file: unlock_stroke
-    code: 0xe076
+  - file: heart_fill
+    code: 0x2665
+    css: heart
+    search: [heart]
+  - file: heart_stroke
+    code: 0x2661
+    css: heart-empty
+    search: [heart]
 
-  - file: unlock_fill
-    code: 0x1f513
+  - file: star
+    code: 0x2605
+    css: star
+    search: [star]
+
+
+  - file: user
+    code: 0x1f464
+    css: user
+    search: [profile, contact, user]
+
+
+  - file: movie
+    code: 0x1f3ac
+    css: video
+    search: [movie, video, film]
+
+  - file: image
+    code: 0x1f304
+    css: picture
+    search: [image, picture, photo]
+
+  - file: camera
+    code: 0x1f4f7
+    css: camera
+    search: [camera, photo]
+
+
+  - file: check
+    code: 0x2713
+    css: ok
+    search: [ok, yes, check, mark]
+
+  - file: check_alt
+    code: 0x2714
+    css: ok-circle
+    search: [ok, yes, check, mark]
+
+  - file: x
+    code: 0x2715
+    css: cancel
+    search: [close, cancel, reject]
+
+  - file: x_alt
+    code: 0x2716
+    css: cancel-circle
+    search: [close, cancel, reject]
+
+  - file: plus
+    code: 0x2795
+    css: plus
+    search: [plus]
+
+  - file: plus_alt
+    code: 0xe008
+    css: plus-circle
+    search: [plus]
+
+  - file: minus
+    code: 0x2796
+    css: minus
+    search: [minus]
+
+  - file: minus_alt
+    code: 0xe009
+    css: minus-circle
+    search: [minus]
+
+  - file: question_mark
+    code: 0x2753
+    css: help
+    search: [help, question]
+
+  - file: info
+    code: 0x2139
+    css: info
+    search: [info]
+
+
+  - file: home
+    code: 0x2302
+    css: home
+    search: [home]
 
   - file: link
     code: 0x1f517
-
-  - file: wrench
-    code: 0x1f527
-
-  - file: clock
-    code: 0x1f554
+    css: link
+    search: [link, url, address]
 
   - file: paperclip
     code: 0xe08a
+    css: attach
+    search: [attach, clip, paperclip]
+
+  - file: lock_fill
+    code: 0x1f512
+    css: lock
+    search: [lock]
+
+  - file: lock_stroke
+    code: 0xe075
+    css: lock-empty
+    search: [lock]
+
+  - file: unlock_fill
+    code: 0x1f513
+    css: lock-open
+    search: [lock, unlock]
+
+  - file: unlock_stroke
+    code: 0xe076
+    css: lock-open-empty
+    search: [lock, unlock]
+
+  - file: pin
+    code: 0x1f4cc
+    from: 0xf08d
+    search: [pin, pushpin]
+
+  - file: eye
+    code: 0xe025
+    css: eye
+    search: [eye, subscribe]
+
+  - file: tag_fill
+    code: 0xe0ab
+    css: tag
+    search: [tag, price, offer]
+
+  - file: tag_stroke
+    code: 0xe02b
+    css: tag-empty
+    search: [tag, price, offer]
+
+
+  - file: download
+    code: 0x1f4e5
+    css: download
+    search: [download]
+  - file: upload
+    code: 0x1f4e4
+    css: upload
+    search: [upload]
+  - file: cloud_download
+    code: 0xe044
+    css: download-cloud
+    search: [download, cloud]
+  - file: cloud_upload
+    code: 0xe045
+    css: upload-cloud
+    search: [upload, cloud]
+
+
+  - file: left_quote
+    code: 0x275d
+    css: quote-left
+    search: [quote]
+  - file: right_quote
+    code: 0x275e
+    css: quote-right
+    search: [quote]
+  - file: left_quote_alt
+    code: 0xe011
+    css: quote-left-alt
+    search: [quote]
+  - file: right_quote_alt
+    code: 0xe012
+    css: quote-right-alt
+    search: [quote]
+
+
+
+  - file: pen_alt_stroke
+    code: 0xe005
+    css: pencil
+    search: [pencil, write, reply, edit]
+
+  - file: pen_alt_fill
+    code: 0xe085
+    css: pencil-neg
+    search: [pencil, write, reply, edit]
+
+  - file: pen_alt2
+    code: 0xe006
+    css: pencil-alt
+    search: [pencil, write, reply, edit]
+
+
+  - file: undo
+    code: 0x21b6
+    css: undo
+    search: [undo, return, back]
+
+
+  # comments
+  - file: comment_stroke
+    code: 0xe06d
+    css: comment
+    search: [comment, reply, write]
+
+  - file: comment_fill
+    code: 0xe0ed
+    css: comment-inv
+    search: [comment, reply, write]
+
+  - file: comment_alt1_stroke
+    code: 0xe003
+    css: comment-alt
+    search: [comment, reply, write]
+
+  - file: comment_alt1_fill
+    code: 0xe083
+    css: comment-inv-alt
+    search: [comment, reply, write]
+
+  - file: comment_alt2_stroke
+    code: 0xe004
+    css: comment-alt2
+    search: [comment, reply, write]
+
+  - file: comment_alt2_fill
+    code: 0xe084
+    css: comment-inv-alt2
+    search: [comment, reply, write]
+
+  - file: chat_alt_stroke
+    code: 0xe007
+    css: chat
+    search: [chat, talk]
+
+  - file: chat_alt_fill
+    code: 0xe087
+    css: chat-inv
+    search: [chat, talk]
+
+
+
+  - file: map_pin_fill
+    code: 0xe0e8
+    css: location
+    search: [location, mark, marker]
+  - file: map_pin_stroke
+    code: 0xe068
+    css: location-inv
+    search: [location, mark, marker]
+  - file: map_pin_alt
+    code: 0xe002
+    css: location-alt
+    search: [location, mark, marker]
+
+  - file: compass
+    code: 0xe021
+    css: compass
+    search: [compass]
+
+
+
+  - file: trash_fill
+    code: 0xe0da
+    css: trash
+    search: [trash, delete]
+  - file: trash_stroke
+    code: 0xe05a
+    css: trash-empty
+    search: [trash, delete]
+
+  - file: document_alt_stroke
+    code: 0x1f4c4
+    css: doc
+    search: [doc, article]
+
+  - file: document_alt_fill
+    code: 0xe080
+    css: doc-inv
+    search: [doc, article]
+
+  - file: document_stroke
+    code: 0x1f4c3
+    css: doc-alt
+    search: [doc, article]
+
+  - file: document_fill
+    code: 0xe0e6
+    css: doc-inv-alt
+    search: [doc, article]
+
+  - file: article
+    code: 0xe053
+    css: article
+    search: [document, article]
+
+  - file: read_more
+    code: 0xe054
+    css: article-alt
+    search: [document, article, more]
+
+
+  - file: book_alt2
+    code: 0x1f4d6
+    css: book-open
+    search: [book, doc]
+
+  - file: folder_fill
+    code: 0xe0e5
+    css: folder
+    search: [folder]
+
+  - file: folder_stroke
+    code: 0xe065
+    css: folder-empty
+    search: [folder]
+
+  - file: box
+    code: 0x1f4e6
+    css: box
+    search: [box, archive, package]
+
+
+  - file: rss_alt
+    code: 0xe02d
+    css: rss
+    search: [rss]
+  - file: rss
+    code: 0xe02c
+    css: rss-alt
+    search: [rss]
+
+  - file: cog
+    code: 0x2699
+    css: cog
+    search: [settings, cog, gear]
+
+  - file: wrench
+    code: 0x1f527
+    css: wrench
+    search: [settings, wrench]
+
+  - file: share
+    code: 0xe02e
+    css: share
+    search: [share]
+
+
+  - file: calendar_alt_stroke
+    code: 0x1f4c5
+    css: calendar
+    search: [calendar, date]
+
+  - file: calendar_alt_fill
+    code: 0xe0ec
+    css: calendar-inv
+    search: [calendar, date]
+
+  - file: calendar
+    code: 0x1f4c6
+    css: calendar-alt
+    search: [calendar, date]
+
+
+    # Sound
+  - file: mic
+    code: 0x1f3a4
+    css: mic
+    search: [mic]
+  - file: volume_mute
+    code: 0x1f507
+    css: volume-off
+    search: [volume, sound, mute]
+  - file: volume
+    code: 0x1f50a
+    css: volume-up
+    search: [volume, sound]
+  - file: headphones
+    code: 0x1f3a7
+    css: headphones
+    search: [sound, music, headphones]
+
+
+  - file: clock
+    code: 0x1f554
+    css: clock
+    search: [clock, time]
+
+  - file: lightbulb
+    code: 0x1f4a1
+    css: lamp
+    search: [idea, lamp, light]
+
+  - file: denied
+    code: 0x1f6ab
+    css: block
+    search: [block, deny]
+
+
+
+  # Resize
+  - file: fullscreen
+    code: 0xe04e
+    css: resize-full
+    search: [resize, fullscreen]
+
+  - file: fullscreen_alt
+    code: 0xe04f
+    css: resize-full-alt
+    search: [resize, fullscreen]
+
+  - file: fullscreen_exit
+    code: 0xe050
+    css: resize-small
+    search: [resize]
+
+  - file: fullscreen_exit_alt
+    code: 0xe051
+    css: resize-small-alt
+    search: [resize]
+
+  - file: move_vertical
+    code: 0xe03b
+    css: resize-vertical
+    search: [resize]
+
+  - file: move_horizontal
+    code: 0xe038
+    css: resize-horizontal
+    search: [resize]
+
+  - file: move
+    code: 0xe03e
+    css: move
+    search: [move]
+
+
+  - file: new_window
+    code: 0xe059
+    css: popup
+    search: [popup, window]
+
+
+  # Arrows
+  - file: arrow_down
+    code: 0x2193
+    css: down
+    search: [arrow, down]
+  - file: arrow_left
+    code: 0x2190
+    css: left
+    search: [arrow, left]
+  - file: arrow_right
+    code: 0x2192
+    css: right
+    search: [arrow, right]
+  - file: arrow_up
+    code: 0x2191
+    css: up
+    search: [arrow, up]
+
+
+  - file: arrow_down_alt1
+    code: 0xe016
+    css: down-circle
+    search: [arrow, down]
+  - file: arrow_left_alt1
+    code: 0xe013
+    css: left-circle
+    search: [arrow, left]
+  - file: arrow_right_alt1
+    code: 0xe015
+    css: right-circle
+    search: [arrow, right]
+  - file: arrow_up_alt1
+    code: 0xe014
+    css: up-circle
+    search: [arrow, up]
+
+
+    # Other arrows
+  - file: reload
+    code: 0x27f3
+    css: cw
+    search: [arrow, reload, redo, repeat]
+
+  - file: loop_alt2
+    code: 0x1f504
+    css: loop
+    search: [arrow, loop, reload, refresh]
+
+  - file: loop_alt3
+    code: 0x1f501
+    css: loop-alt
+    search: [arrow, loop, reload, refresh]
+
+  - file: transfer
+    code: 0x21c4
+    css: exchange
+    search: [arrow, exchange, transfer]
+
+  - file: fork
+    code: 0x2387
+    css: split
+    search: [arrow, split, fork]
+
+  - file: curved_arrow
+    code: 0x2935
+    css: arrow-curved
+    search: [arrow]
+
+
+    # Player
+  - file: play
+    code: 0x25b6
+    css: play
+    search: [play, player]
+  - file: play_alt
+    code: 0xe048
+    css: play-circle2
+    search: [play, player]
+  - file: stop
+    code: 0x25aa
+    css: stop
+    search: [stop, player]
+  - file: pause
+    code: 0x2389
+    css: pause
+    search: [pause, player]
+  - file: first
+    code: 0x23ee
+    css: to-start
+    search: [left, player]
+  - file: last
+    code: 0x23ed
+    css: to-end
+    search: [right, player]
+  - file: eject
+    code: 0x23cf
+    css: eject
+    search: [eject, player]
+
+
+  - file: target
+    code: 0x1f3af
+    css: target
+    search: [target]
+
+  - file: award_fill
+    code: 0x1f3c9
+    css: award
+    search: [top, trophy, prize, award]
+
+  - file: award_stroke
+    code: 0xe0a2
+    css: award-empty
+    search: [top, trophy, prize, award]
+
+  - file: list
+    code: 0xe055
+    css: list
+    search: [list]
+
+  - file: list_nested
+    code: 0xe056
+    css: list-nested
+    search: [list]
+
+
+  - file: battery_empty
+    code: 0xe05c
+    css: bat-empty
+    search: [battery]
+
+  - file: battery_half
+    code: 0xe05b
+    css: bat-half
+    search: [battery]
+
+  - file: battery_full
+    code: 0xe073
+    css: bat-full
+    search: [battery]
+
+  - file: battery_charging
+    code: 0xe05d
+    css: bat-charge
+    search: [battery, charge]
+
+
+
+  - file: iphone
+    code: 0x1f4f1
+    css: mobile
+    search: [mobile, iphone]
+
+  - file: cd
+    code: 0x1f4bf
+    css: cd
+    search: [cd, vinyl]
+
+  - file: equalizer
+    code: 0xe052
+    css: equalizer
+    search: [equalizer]
+
+  - file: cursor
+    code: 0xe057
+    css: cursor
+    search: [cursor, arrow]
+
+  - file: aperture
+    code: 0xe026
+    css: aperture
+    search: [aperture]
+
+  - file: aperture_alt
+    code: 0xe00c
+    css: aperture-alt
+    search: [aperture]
+
+  - file: steering_wheel
+    code: 0xe024
+    css: steering-wheel
+    search: [steering, wheel]
+
+  - file: book
+    code: 0x1f4d5
+    css: book
+    search: [book]
+
+  - file: book_alt
+    code: 0x1f4d4
+    css: book-alt
+    search: [book]
+
+
+  # Painting
+  - file: brush
+    code: 0xe01b
+    css: brush
+    search: [paint, brush]
+
+  - file: brush_alt
+    code: 0xe01c
+    css: brush-alt
+    search: [paint, brush]
+
+  - file: eyedropper
+    code: 0xe01e
+    css: eyedropper
+    search: [paint, eyedropper]
+
+  - file: layers
+    code: 0xe01f
+    css: layers
+    search: [paint, layers]
+
+  - file: layers_alt
+    code: 0xe020
+    css: layers-alt
+    search: [paint, layers]
+
+
+
+  # weather
+  - file: sun_stroke
+    code: 0x263c
+    css: sun
+    search: [weather, sun]
+
+  - file: sun_fill
+    code: 0x2600
+    css: sun-inv
+    search: [weather, sun]
+
+  - file: cloud
+    code: 0x2601
+    css: cloud
+    search: [weather, cloud]
+
+  - file: rain
+    code: 0x26c6
+    css: rain
+    search: [weather, rain]
+
+  - file: bolt
+    code: 0x26a1
+    css: flash
+    search: [flash, bolt]
+
+  - file: moon_stroke
+    code: 0x263e
+    css: moon
+    search: [moon, sleep]
+
+  - file: moon_fill
+    code: 0xe07a
+    css: moon-inv
+    search: [moon, sleep]
+
+  - file: umbrella
+    code: 0x2602
+    css: umbrella
+    search: [weather, umbrella]
+
+
+  # Charts
+  - file: bars_alt
+    code: 0x1f4ca
+    css: chart-bar
+    search: [chart, bar, diagram, signal, wifi]
+
+  - file: bars
+    code: 0xe06f
+    css: chart-bar-alt
+    search: [chart, bar, diagram]
+
+  - file: chart
+    code: 0xe028
+    css: chart-pie
+    search: [chart, pie, diagram]
+
+  - file: chart_alt
+    code: 0xe029
+    css: chart-pie-alt
+    search: [chart, pie, diagram]
+
+
+  - file: key_stroke
+    code: 0x26bf
+    css: key
+    search: [key]
+
+  - file: key_fill
+    code: 0x1f511
+    css: key-inv
+    search: [key]
+
+
+
+  # Strange
+  - file: hash
+    code: 0x0023
+    css: hash
+    search: [hash]
+
+  - file: at
+    code: 0x0040
+    css: at
+    search: ["@", "at"]
+
+  - file: pilcrow
+    code: 0x00b6
+    css: pilcrow
+    search: [pilcrow]
+
+  - file: dial
+    code: 0xe058
+    css: dial
+    search: [dial]
+
+# Duplicates (or very similar)
+
+#  - file: chat
+#    code: 0xe05e
+
+#  - file: pen
+#    code: 0x270e
+
+# Bad details in small size
+
+#  - file: arrow_left_alt2
+#    code: 0xe017
+#  - file: arrow_up_alt2
+#    code: 0xe018
+#  - file: arrow_right_alt2
+#    code: 0xe019
+#  - file: arrow_down_alt2
+#    code: 0xe01a
+
+#  - file: move_horizontal_alt1
+#    code: 0xe039
+#  - file: move_horizontal_alt2
+#    code: 0xe03a
+
+#  - file: move_vertical_alt1
+#    code: 0xe03c
+#  - file: move_vertical_alt2
+#    code: 0xe03d
+
+#  - file: move_alt1
+#    code: 0xe03f
+#  - file: move_alt2
+#    code: 0xe040
+
+#  - file: spin
+#    code: 0xe036
+#  - file: spin_alt
+#    code: 0xe037
+
+#  - file: reload_alt
+#    code: 0xe031
+
+#  - file: loop_alt1
+#    code: 0xe032
+#  - file: loop_alt4
+#    code: 0xe035
+
+#  - file: beaker
+#    code: 0xe023
+#  - file: beaker_alt
+#    code: 0xe010
 
