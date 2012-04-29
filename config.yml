@@ -180,22 +180,22 @@ glyphs:
     search: [close, cancel, reject]
 
   - file: plus
-    code: 0x2795
+    code: 0x2b
     css: plus
     search: [plus]
 
   - file: plus_alt
-    code: 0xe008
+    code: 0x2795
     css: plus-circle
     search: [plus]
 
   - file: minus
-    code: 0x2796
+    code: 0x2d
     css: minus
     search: [minus]
 
   - file: minus_alt
-    code: 0xe009
+    code: 0x2796
     css: minus-circle
     search: [minus]
 
@@ -221,7 +221,7 @@ glyphs:
     search: [link, url, address]
 
   - file: paperclip
-    code: 0xe08a
+    code: 0x1f4ce
     css: attach
     search: [attach, clip, paperclip]
 
@@ -231,7 +231,7 @@ glyphs:
     search: [lock]
 
   - file: lock_stroke
-    code: 0xe075
+    code: 0xe708
     css: lock-empty
     search: [lock]
 
@@ -241,7 +241,7 @@ glyphs:
     search: [lock, unlock]
 
   - file: unlock_stroke
-    code: 0xe076
+    code: 0xe709
     css: lock-open-empty
     search: [lock, unlock]
 
@@ -251,17 +251,17 @@ glyphs:
     search: [pin, pushpin]
 
   - file: eye
-    code: 0xe025
+    code: 0xe70a
     css: eye
     search: [eye, subscribe]
 
   - file: tag_fill
-    code: 0xe0ab
+    code: 0xe70c
     css: tag
     search: [tag, price, offer]
 
   - file: tag_stroke
-    code: 0xe02b
+    code: 0xe70e
     css: tag-empty
     search: [tag, price, offer]
 
@@ -275,11 +275,11 @@ glyphs:
     css: upload
     search: [upload]
   - file: cloud_download
-    code: 0xe044
+    code: 0xe710
     css: download-cloud
     search: [download, cloud]
   - file: cloud_upload
-    code: 0xe045
+    code: 0xe711
     css: upload-cloud
     search: [upload, cloud]
 
@@ -293,28 +293,28 @@ glyphs:
     css: quote-right
     search: [quote]
   - file: left_quote_alt
-    code: 0xe011
+    code: 0x275b
     css: quote-left-alt
     search: [quote]
   - file: right_quote_alt
-    code: 0xe012
+    code: 0x275c
     css: quote-right-alt
     search: [quote]
 
 
 
   - file: pen_alt_stroke
-    code: 0xe005
+    code: 0x270e
     css: pencil
     search: [pencil, write, reply, edit]
 
   - file: pen_alt_fill
-    code: 0xe085
+    code: 0x270f
     css: pencil-neg
     search: [pencil, write, reply, edit]
 
   - file: pen_alt2
-    code: 0xe006
+    code: 0x2710
     css: pencil-alt
     search: [pencil, write, reply, edit]
 
@@ -327,103 +327,103 @@ glyphs:
 
   # comments
   - file: comment_stroke
-    code: 0xe06d
+    code: 0xe718
     css: comment
     search: [comment, reply, write]
 
   - file: comment_fill
-    code: 0xe0ed
+    code: 0xe719
     css: comment-inv
     search: [comment, reply, write]
 
   - file: comment_alt1_stroke
-    code: 0xe003
+    code: 0xe71a
     css: comment-alt
     search: [comment, reply, write]
 
   - file: comment_alt1_fill
-    code: 0xe083
+    code: 0xe71b
     css: comment-inv-alt
     search: [comment, reply, write]
 
   - file: comment_alt2_stroke
-    code: 0xe004
+    code: 0xe71c
     css: comment-alt2
     search: [comment, reply, write]
 
   - file: comment_alt2_fill
-    code: 0xe084
+    code: 0xe71d
     css: comment-inv-alt2
     search: [comment, reply, write]
 
   - file: chat_alt_stroke
-    code: 0xe007
+    code: 0xe720
     css: chat
     search: [chat, talk]
 
   - file: chat_alt_fill
-    code: 0xe087
+    code: 0xe721
     css: chat-inv
     search: [chat, talk]
 
 
 
   - file: map_pin_fill
-    code: 0xe0e8
+    code: 0xe724
     css: location
     search: [location, mark, marker]
   - file: map_pin_stroke
-    code: 0xe068
+    code: 0xe725
     css: location-inv
     search: [location, mark, marker]
   - file: map_pin_alt
-    code: 0xe002
+    code: 0xe726
     css: location-alt
     search: [location, mark, marker]
 
   - file: compass
-    code: 0xe021
+    code: 0xe728
     css: compass
     search: [compass]
 
 
 
   - file: trash_fill
-    code: 0xe0da
+    code: 0xe729
     css: trash
     search: [trash, delete]
   - file: trash_stroke
-    code: 0xe05a
+    code: 0xe72a
     css: trash-empty
     search: [trash, delete]
 
   - file: document_alt_stroke
-    code: 0x1f4c4
+    code: 0xe730
     css: doc
     search: [doc, article]
 
   - file: document_alt_fill
-    code: 0xe080
+    code: 0xe731
     css: doc-inv
     search: [doc, article]
 
   - file: document_stroke
-    code: 0x1f4c3
+    code: 0xe732
     css: doc-alt
     search: [doc, article]
 
   - file: document_fill
-    code: 0xe0e6
+    code: 0xe733
     css: doc-inv-alt
     search: [doc, article]
 
   - file: article
-    code: 0xe053
+    code: 0xe734
     css: article
     search: [document, article]
 
   - file: read_more
-    code: 0xe054
+    code: 0xe735
     css: article-alt
     search: [document, article, more]
 
@@ -434,12 +434,12 @@ glyphs:
     search: [book, doc]
 
   - file: folder_fill
-    code: 0xe0e5
+    code: 0x1f4c1
     css: folder
     search: [folder]
 
   - file: folder_stroke
-    code: 0xe065
+    code: 0x1f4c2
     css: folder-empty
     search: [folder]
 
@@ -450,11 +450,11 @@ glyphs:
 
 
   - file: rss_alt
-    code: 0xe02d
+    code: 0xe73a
     css: rss
     search: [rss]
   - file: rss
-    code: 0xe02c
+    code: 0xe73b
     css: rss-alt
     search: [rss]
 
@@ -469,7 +469,7 @@ glyphs:
     search: [settings, wrench]
 
   - file: share
-    code: 0xe02e
+    code: 0xe73c
     css: share
     search: [share]
 
@@ -480,7 +480,7 @@ glyphs:
     search: [calendar, date]
 
   - file: calendar_alt_fill
-    code: 0xe0ec
+    code: 0xe73e
     css: calendar-inv
     search: [calendar, date]
 
@@ -528,43 +528,43 @@ glyphs:
 
   # Resize
   - file: fullscreen
-    code: 0xe04e
+    code: 0xe744
     css: resize-full
     search: [resize, fullscreen]
 
   - file: fullscreen_alt
-    code: 0xe04f
+    code: 0xe745
     css: resize-full-alt
     search: [resize, fullscreen]
 
   - file: fullscreen_exit
-    code: 0xe050
+    code: 0xe746
     css: resize-small
     search: [resize]
 
   - file: fullscreen_exit_alt
-    code: 0xe051
+    code: 0xe747
     css: resize-small-alt
     search: [resize]
 
   - file: move_vertical
-    code: 0xe03b
+    code: 0x2b0c
     css: resize-vertical
     search: [resize]
 
   - file: move_horizontal
-    code: 0xe038
+    code: 0x2b0d
     css: resize-horizontal
     search: [resize]
 
   - file: move
-    code: 0xe03e
+    code: 0xe74a
     css: move
     search: [move]
 
 
   - file: new_window
-    code: 0xe059
+    code: 0xe74c
     css: popup
     search: [popup, window]
 
@@ -589,19 +589,19 @@ glyphs:
 
 
   - file: arrow_down_alt1
-    code: 0xe016
+    code: 0xe4a4
     css: down-circle
     search: [arrow, down]
   - file: arrow_left_alt1
-    code: 0xe013
+    code: 0xe4a1
     css: left-circle
     search: [arrow, left]
   - file: arrow_right_alt1
-    code: 0xe015
+    code: 0xe4a2
     css: right-circle
     search: [arrow, right]
   - file: arrow_up_alt1
-    code: 0xe014
+    code: 0xe4a3
     css: up-circle
     search: [arrow, up]
 
@@ -674,44 +674,50 @@ glyphs:
     css: target
     search: [target]
 
+  - file: bars_alt
+    code: 0x1f4f6
+    css: signal
+    search: [chart, bar, diagram, signal, wifi]
+
+
   - file: award_fill
     code: 0x1f3c9
     css: award
     search: [top, trophy, prize, award]
 
   - file: award_stroke
-    code: 0xe0a2
+    code: 0xe764
     css: award-empty
     search: [top, trophy, prize, award]
 
   - file: list
-    code: 0xe055
+    code: 0xe765
     css: list
     search: [list]
 
   - file: list_nested
-    code: 0xe056
+    code: 0xe766
     css: list-nested
     search: [list]
 
 
   - file: battery_empty
-    code: 0xe05c
+    code: 0xe772
     css: bat-empty
     search: [battery]
 
   - file: battery_half
-    code: 0xe05b
+    code: 0xe773
     css: bat-half
     search: [battery]
 
   - file: battery_full
-    code: 0xe073
+    code: 0xe774
     css: bat-full
     search: [battery]
 
   - file: battery_charging
-    code: 0xe05d
+    code: 0xe775
     css: bat-charge
     search: [battery, charge]
 
@@ -728,27 +734,27 @@ glyphs:
     search: [cd, vinyl]
 
   - file: equalizer
-    code: 0xe052
+    code: 0xe795
     css: equalizer
     search: [equalizer]
 
   - file: cursor
-    code: 0xe057
+    code: 0xe796
     css: cursor
     search: [cursor, arrow]
 
   - file: aperture
-    code: 0xe026
+    code: 0xe797
     css: aperture
     search: [aperture]
 
   - file: aperture_alt
-    code: 0xe00c
+    code: 0xe798
     css: aperture-alt
     search: [aperture]
 
   - file: steering_wheel
-    code: 0xe024
+    code: 0xe799
     css: steering-wheel
     search: [steering, wheel]
 
@@ -765,27 +771,27 @@ glyphs:
 
   # Painting
   - file: brush
-    code: 0xe01b
+    code: 0xe79a
     css: brush
     search: [paint, brush]
 
   - file: brush_alt
-    code: 0xe01c
+    code: 0xe79b
     css: brush-alt
     search: [paint, brush]
 
   - file: eyedropper
-    code: 0xe01e
+    code: 0xe79c
     css: eyedropper
     search: [paint, eyedropper]
 
   - file: layers
-    code: 0xe01f
+    code: 0xe79d
     css: layers
     search: [paint, layers]
 
   - file: layers_alt
-    code: 0xe020
+    code: 0xe79e
     css: layers-alt
     search: [paint, layers]
 
@@ -823,7 +829,7 @@ glyphs:
     search: [moon, sleep]
 
   - file: moon_fill
-    code: 0xe07a
+    code: 0xe7a0
     css: moon-inv
     search: [moon, sleep]
 
@@ -834,23 +840,18 @@ glyphs:
 
 
   # Charts
-  - file: bars_alt
+  - file: bars
     code: 0x1f4ca
     css: chart-bar
-    search: [chart, bar, diagram, signal, wifi]
-
-  - file: bars
-    code: 0xe06f
-    css: chart-bar-alt
     search: [chart, bar, diagram]
 
   - file: chart
-    code: 0xe028
+    code: 0xe7a2
     css: chart-pie
     search: [chart, pie, diagram]
 
   - file: chart_alt
-    code: 0xe029
+    code: 0xe7a3
     css: chart-pie-alt
     search: [chart, pie, diagram]
 
@@ -884,7 +885,7 @@ glyphs:
     search: [pilcrow]
 
   - file: dial
-    code: 0xe058
+    code: 0xe7a4
     css: dial
     search: [dial]
 
