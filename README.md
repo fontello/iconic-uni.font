@@ -14,6 +14,8 @@ Difference from original:
 - hinted with `ttfautohint`
 - better demo page + css
 - hidden some symbols, unclear at small sizes (see tail of config file)
+- changed css glyphs names, to be more semantic
+
 
 License
 -------
