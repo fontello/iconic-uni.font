@@ -936,7 +936,7 @@ glyphs:
     code: 0x263c
     uid: 9f41cbda67dafb38926a4201a01691c9
     css: sun
-    search: [weather, sun]
+    search: [weather, sun, brightness]
 
   - file: sun_fill
     code: 0x2600
