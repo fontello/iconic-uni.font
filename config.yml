@@ -89,7 +89,7 @@ meta:
 transform:
   baseline: 0.5
   rescale: 1.2
-  offset: -0.05
+  offset: -0.025
 
 font:
   version: "1.0"
@@ -103,8 +103,8 @@ font:
 
   copyright: Copyright (C) 2012 by P.J. Onori
 
-  ascent: 800
-  descent: 200
+  ascent: 850
+  descent: 150
   weight: Medium
 
 
