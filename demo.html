@@ -1,0 +1,969 @@
+<!DOCTYPE html><html><head><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta charset="UTF-8"><style type="text/css">/*
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+/* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+/* Part 1: Set a maxium relative to the parent */
+  width: auto 9;
+/* IE7-8 need help adjusting responsive images */
+  height: auto;
+/* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#map_canvas img,
+.google-maps img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.span12 {
+  width: 940px;
+}
+.span11 {
+  width: 860px;
+}
+.span10 {
+  width: 780px;
+}
+.span9 {
+  width: 700px;
+}
+.span8 {
+  width: 620px;
+}
+.span7 {
+  width: 540px;
+}
+.span6 {
+  width: 460px;
+}
+.span5 {
+  width: 380px;
+}
+.span4 {
+  width: 300px;
+}
+.span3 {
+  width: 220px;
+}
+.span2 {
+  width: 140px;
+}
+.span1 {
+  width: 60px;
+}
+.offset12 {
+  margin-left: 980px;
+}
+.offset11 {
+  margin-left: 900px;
+}
+.offset10 {
+  margin-left: 820px;
+}
+.offset9 {
+  margin-left: 740px;
+}
+.offset8 {
+  margin-left: 660px;
+}
+.offset7 {
+  margin-left: 580px;
+}
+.offset6 {
+  margin-left: 500px;
+}
+.offset5 {
+  margin-left: 420px;
+}
+.offset4 {
+  margin-left: 340px;
+}
+.offset3 {
+  margin-left: 260px;
+}
+.offset2 {
+  margin-left: 180px;
+}
+.offset1 {
+  margin-left: 100px;
+}
+.row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row-fluid:after {
+  clear: both;
+}
+.row-fluid [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+}
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+.row-fluid .span12 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+.row-fluid .span11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%;
+}
+.row-fluid .span10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+}
+.row-fluid .span9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%;
+}
+.row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+.row-fluid .span7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%;
+}
+.row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+.row-fluid .span5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%;
+}
+.row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+.row-fluid .span3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%;
+}
+.row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+.row-fluid .span1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%;
+}
+.row-fluid .offset12 {
+  margin-left: 104.25531914893617%;
+  *margin-left: 104.14893617021275%;
+}
+.row-fluid .offset12:first-child {
+  margin-left: 102.12765957446808%;
+  *margin-left: 102.02127659574467%;
+}
+.row-fluid .offset11 {
+  margin-left: 95.74468085106382%;
+  *margin-left: 95.6382978723404%;
+}
+.row-fluid .offset11:first-child {
+  margin-left: 93.61702127659574%;
+  *margin-left: 93.51063829787232%;
+}
+.row-fluid .offset10 {
+  margin-left: 87.23404255319149%;
+  *margin-left: 87.12765957446807%;
+}
+.row-fluid .offset10:first-child {
+  margin-left: 85.1063829787234%;
+  *margin-left: 84.99999999999999%;
+}
+.row-fluid .offset9 {
+  margin-left: 78.72340425531914%;
+  *margin-left: 78.61702127659572%;
+}
+.row-fluid .offset9:first-child {
+  margin-left: 76.59574468085106%;
+  *margin-left: 76.48936170212764%;
+}
+.row-fluid .offset8 {
+  margin-left: 70.2127659574468%;
+  *margin-left: 70.10638297872339%;
+}
+.row-fluid .offset8:first-child {
+  margin-left: 68.08510638297872%;
+  *margin-left: 67.9787234042553%;
+}
+.row-fluid .offset7 {
+  margin-left: 61.70212765957446%;
+  *margin-left: 61.59574468085106%;
+}
+.row-fluid .offset7:first-child {
+  margin-left: 59.574468085106375%;
+  *margin-left: 59.46808510638297%;
+}
+.row-fluid .offset6 {
+  margin-left: 53.191489361702125%;
+  *margin-left: 53.085106382978715%;
+}
+.row-fluid .offset6:first-child {
+  margin-left: 51.063829787234035%;
+  *margin-left: 50.95744680851063%;
+}
+.row-fluid .offset5 {
+  margin-left: 44.68085106382979%;
+  *margin-left: 44.57446808510638%;
+}
+.row-fluid .offset5:first-child {
+  margin-left: 42.5531914893617%;
+  *margin-left: 42.4468085106383%;
+}
+.row-fluid .offset4 {
+  margin-left: 36.170212765957444%;
+  *margin-left: 36.06382978723405%;
+}
+.row-fluid .offset4:first-child {
+  margin-left: 34.04255319148936%;
+  *margin-left: 33.93617021276596%;
+}
+.row-fluid .offset3 {
+  margin-left: 27.659574468085104%;
+  *margin-left: 27.5531914893617%;
+}
+.row-fluid .offset3:first-child {
+  margin-left: 25.53191489361702%;
+  *margin-left: 25.425531914893618%;
+}
+.row-fluid .offset2 {
+  margin-left: 19.148936170212764%;
+  *margin-left: 19.04255319148936%;
+}
+.row-fluid .offset2:first-child {
+  margin-left: 17.02127659574468%;
+  *margin-left: 16.914893617021278%;
+}
+.row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%;
+}
+.row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%;
+}
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none;
+}
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container-fluid:after {
+  clear: both;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+.muted {
+  color: #999;
+}
+.text-warning {
+  color: #c09853;
+}
+a.text-warning:hover {
+  color: #a47e3c;
+}
+.text-error {
+  color: #b94a48;
+}
+a.text-error:hover {
+  color: #953b39;
+}
+.text-info {
+  color: #3a87ad;
+}
+a.text-info:hover {
+  color: #2d6987;
+}
+.text-success {
+  color: #468847;
+}
+a.text-success:hover {
+  color: #356635;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 38.5px;
+}
+h2 {
+  font-size: 31.5px;
+}
+h3 {
+  font-size: 24.5px;
+}
+h4 {
+  font-size: 17.5px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11.9px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+h2 small {
+  font-size: 17.5px;
+}
+h3 small {
+  font-size: 14px;
+}
+h4 small {
+  font-size: 14px;
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eee;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: 20px;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+dl {
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 20px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 10px;
+}
+.dl-horizontal {
+  *zoom: 1;
+}
+.dl-horizontal:before,
+.dl-horizontal:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.dl-horizontal:after {
+  clear: both;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999;
+}
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eee;
+}
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eee;
+  border-left: 0;
+}
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+blockquote.pull-right small:before {
+  content: '';
+}
+blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+body {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  z-index: 10;
+}
+.footer {
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.the-icons {
+  font-size: 14px;
+  line-height: 24px;
+}
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #888;
+}
+.switch input {
+  margin-right: 0.3em;
+}
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}
+</style><style type="text/css">@font-face {
+  font-family: 'iconic';
+  src: url('iconic.eot?36019155');
+  src: url('iconic.eot?36019155#iefix') format('embedded-opentype'),
+       url('iconic.woff?36019155') format('woff'),
+       url('iconic.ttf?36019155') format('truetype'),
+       url('iconic.svg?36019155#iconic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iconic';
+    src: url('../font/iconic.svg?36019155#iconic') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "iconic";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-search:before { content: '🔎'; } /* '\1f50e' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-heart-empty:before { content: '\2661'; } /* '♡' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
+.icon-video:before { content: '🎬'; } /* '\1f3ac' */
+.icon-picture:before { content: '🌄'; } /* '\1f304' */
+.icon-camera:before { content: '📷'; } /* '\1f4f7' */
+.icon-ok:before { content: '\2713'; } /* '✓' */
+.icon-ok-circle:before { content: '\2714'; } /* '✔' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-cancel-circle:before { content: '\2716'; } /* '✖' */
+.icon-plus:before { content: '\2b'; } /* '+' */
+.icon-plus-circle:before { content: '\2795'; } /* '➕' */
+.icon-minus:before { content: '\2d'; } /* '-' */
+.icon-minus-circle:before { content: '\2796'; } /* '➖' */
+.icon-help:before { content: '\2753'; } /* '❓' */
+.icon-info:before { content: '\2139'; } /* 'ℹ' */
+.icon-home:before { content: '\2302'; } /* '⌂' */
+.icon-link:before { content: '🔗'; } /* '\1f517' */
+.icon-attach:before { content: '📎'; } /* '\1f4ce' */
+.icon-lock:before { content: '🔒'; } /* '\1f512' */
+.icon-lock-empty:before { content: '\e708'; } /* '' */
+.icon-lock-open:before { content: '🔓'; } /* '\1f513' */
+.icon-lock-open-empty:before { content: '\e709'; } /* '' */
+.icon-pin:before { content: '📌'; } /* '\1f4cc' */
+.icon-eye:before { content: '\e70a'; } /* '' */
+.icon-tag:before { content: '\e70c'; } /* '' */
+.icon-tag-empty:before { content: '\e70e'; } /* '' */
+.icon-download:before { content: '📥'; } /* '\1f4e5' */
+.icon-upload:before { content: '📤'; } /* '\1f4e4' */
+.icon-download-cloud:before { content: '\e710'; } /* '' */
+.icon-upload-cloud:before { content: '\e711'; } /* '' */
+.icon-quote-left:before { content: '\275d'; } /* '❝' */
+.icon-quote-right:before { content: '\275e'; } /* '❞' */
+.icon-quote-left-alt:before { content: '\275b'; } /* '❛' */
+.icon-quote-right-alt:before { content: '\275c'; } /* '❜' */
+.icon-pencil:before { content: '\270e'; } /* '✎' */
+.icon-pencil-neg:before { content: '\270f'; } /* '✏' */
+.icon-pencil-alt:before { content: '\2710'; } /* '✐' */
+.icon-undo:before { content: '\21b6'; } /* '↶' */
+.icon-comment:before { content: '\e718'; } /* '' */
+.icon-comment-inv:before { content: '\e719'; } /* '' */
+.icon-comment-alt:before { content: '\e71a'; } /* '' */
+.icon-comment-inv-alt:before { content: '\e71b'; } /* '' */
+.icon-comment-alt2:before { content: '\e71c'; } /* '' */
+.icon-comment-inv-alt2:before { content: '\e71d'; } /* '' */
+.icon-chat:before { content: '\e720'; } /* '' */
+.icon-chat-inv:before { content: '\e721'; } /* '' */
+.icon-location:before { content: '\e724'; } /* '' */
+.icon-location-inv:before { content: '\e725'; } /* '' */
+.icon-location-alt:before { content: '\e726'; } /* '' */
+.icon-compass:before { content: '\e728'; } /* '' */
+.icon-trash:before { content: '\e729'; } /* '' */
+.icon-trash-empty:before { content: '\e72a'; } /* '' */
+.icon-doc:before { content: '\e730'; } /* '' */
+.icon-doc-inv:before { content: '\e731'; } /* '' */
+.icon-doc-alt:before { content: '\e732'; } /* '' */
+.icon-doc-inv-alt:before { content: '\e733'; } /* '' */
+.icon-article:before { content: '\e734'; } /* '' */
+.icon-article-alt:before { content: '\e735'; } /* '' */
+.icon-book-open:before { content: '📖'; } /* '\1f4d6' */
+.icon-folder:before { content: '📁'; } /* '\1f4c1' */
+.icon-folder-empty:before { content: '📂'; } /* '\1f4c2' */
+.icon-box:before { content: '📦'; } /* '\1f4e6' */
+.icon-rss:before { content: '\e73a'; } /* '' */
+.icon-rss-alt:before { content: '\e73b'; } /* '' */
+.icon-cog:before { content: '\2699'; } /* '⚙' */
+.icon-wrench:before { content: '🔧'; } /* '\1f527' */
+.icon-share:before { content: '\e73c'; } /* '' */
+.icon-calendar:before { content: '📅'; } /* '\1f4c5' */
+.icon-calendar-inv:before { content: '\e73e'; } /* '' */
+.icon-calendar-alt:before { content: '📆'; } /* '\1f4c6' */
+.icon-mic:before { content: '🎤'; } /* '\1f3a4' */
+.icon-volume-off:before { content: '🔇'; } /* '\1f507' */
+.icon-volume-up:before { content: '🔊'; } /* '\1f50a' */
+.icon-headphones:before { content: '🎧'; } /* '\1f3a7' */
+.icon-clock:before { content: '🕔'; } /* '\1f554' */
+.icon-lamp:before { content: '💡'; } /* '\1f4a1' */
+.icon-block:before { content: '🚫'; } /* '\1f6ab' */
+.icon-resize-full:before { content: '\e744'; } /* '' */
+.icon-resize-full-alt:before { content: '\e745'; } /* '' */
+.icon-resize-small:before { content: '\e746'; } /* '' */
+.icon-resize-small-alt:before { content: '\e747'; } /* '' */
+.icon-resize-vertical:before { content: '\2b0c'; } /* '⬌' */
+.icon-resize-horizontal:before { content: '\2b0d'; } /* '⬍' */
+.icon-move:before { content: '\e74a'; } /* '' */
+.icon-popup:before { content: '\e74c'; } /* '' */
+.icon-down:before { content: '\2193'; } /* '↓' */
+.icon-left:before { content: '\2190'; } /* '←' */
+.icon-right:before { content: '\2192'; } /* '→' */
+.icon-up:before { content: '\2191'; } /* '↑' */
+.icon-down-circle:before { content: '\e4a4'; } /* '' */
+.icon-left-circle:before { content: '\e4a1'; } /* '' */
+.icon-right-circle:before { content: '\e4a2'; } /* '' */
+.icon-up-circle:before { content: '\e4a3'; } /* '' */
+.icon-cw:before { content: '\27f3'; } /* '⟳' */
+.icon-loop:before { content: '🔄'; } /* '\1f504' */
+.icon-loop-alt:before { content: '🔁'; } /* '\1f501' */
+.icon-exchange:before { content: '\21c4'; } /* '⇄' */
+.icon-split:before { content: '\2387'; } /* '⎇' */
+.icon-arrow-curved:before { content: '\2935'; } /* '⤵' */
+.icon-play:before { content: '\25b6'; } /* '▶' */
+.icon-play-circle2:before { content: '\e048'; } /* '' */
+.icon-stop:before { content: '\25aa'; } /* '▪' */
+.icon-pause:before { content: '\2389'; } /* '⎉' */
+.icon-to-start:before { content: '\23ee'; } /* '⏮' */
+.icon-to-end:before { content: '\23ed'; } /* '⏭' */
+.icon-eject:before { content: '\23cf'; } /* '⏏' */
+.icon-target:before { content: '🎯'; } /* '\1f3af' */
+.icon-signal:before { content: '📶'; } /* '\1f4f6' */
+.icon-award:before { content: '🏉'; } /* '\1f3c9' */
+.icon-award-empty:before { content: '\e764'; } /* '' */
+.icon-list:before { content: '\e765'; } /* '' */
+.icon-list-nested:before { content: '\e766'; } /* '' */
+.icon-bat-empty:before { content: '\e772'; } /* '' */
+.icon-bat-half:before { content: '\e773'; } /* '' */
+.icon-bat-full:before { content: '\e774'; } /* '' */
+.icon-bat-charge:before { content: '\e775'; } /* '' */
+.icon-mobile:before { content: '📱'; } /* '\1f4f1' */
+.icon-cd:before { content: '💿'; } /* '\1f4bf' */
+.icon-equalizer:before { content: '\e795'; } /* '' */
+.icon-cursor:before { content: '\e796'; } /* '' */
+.icon-aperture:before { content: '\e797'; } /* '' */
+.icon-aperture-alt:before { content: '\e798'; } /* '' */
+.icon-steering-wheel:before { content: '\e799'; } /* '' */
+.icon-book:before { content: '📕'; } /* '\1f4d5' */
+.icon-book-alt:before { content: '📔'; } /* '\1f4d4' */
+.icon-brush:before { content: '\e79a'; } /* '' */
+.icon-brush-alt:before { content: '\e79b'; } /* '' */
+.icon-eyedropper:before { content: '\e79c'; } /* '' */
+.icon-layers:before { content: '\e79d'; } /* '' */
+.icon-layers-alt:before { content: '\e79e'; } /* '' */
+.icon-sun:before { content: '\263c'; } /* '☼' */
+.icon-sun-inv:before { content: '\2600'; } /* '☀' */
+.icon-cloud:before { content: '\2601'; } /* '☁' */
+.icon-rain:before { content: '\26c6'; } /* '⛆' */
+.icon-flash:before { content: '\26a1'; } /* '⚡' */
+.icon-moon:before { content: '\263e'; } /* '☾' */
+.icon-moon-inv:before { content: '\e7a0'; } /* '' */
+.icon-umbrella:before { content: '\2602'; } /* '☂' */
+.icon-chart-bar:before { content: '📊'; } /* '\1f4ca' */
+.icon-chart-pie:before { content: '\e7a2'; } /* '' */
+.icon-chart-pie-alt:before { content: '\e7a3'; } /* '' */
+.icon-key:before { content: '\26bf'; } /* '⚿' */
+.icon-key-inv:before { content: '🔑'; } /* '\1f511' */
+.icon-hash:before { content: '\23'; } /* '#' */
+.icon-at:before { content: '\40'; } /* '@' */
+.icon-pilcrow:before { content: '\b6'; } /* '¶' */
+.icon-dial:before { content: '\e7a4'; } /* '' */</style><script>function toggleCodes(on) {
+  var obj = document.getElementById('icons');
+  
+  if (on) {
+    obj.className += ' ' + 'codesOn';
+  } else {
+    obj.className = obj.className.replace(' codesOn', '');
+  }
+}
+</script></head><body><div class="container header"><h1>Iconic
+ <small>font demo</small></h1><label class="switch"><input type="checkbox" onclick="toggleCodes(this.checked)">show codes</label></div><div id="icons" class="container"><div class="row"><div title="Code: 0x1f50e" class="the-icons span3"><i class="icon-search"></i> <span class="i-name">icon-search</span><span class="i-code">0x1f50e</span></div><div title="Code: 0x2709" class="the-icons span3"><i class="icon-mail"></i> <span class="i-name">icon-mail</span><span class="i-code">0x2709</span></div><div title="Code: 0x2665" class="the-icons span3"><i class="icon-heart"></i> <span class="i-name">icon-heart</span><span class="i-code">0x2665</span></div><div title="Code: 0x2661" class="the-icons span3"><i class="icon-heart-empty"></i> <span class="i-name">icon-heart-empty</span><span class="i-code">0x2661</span></div></div><div class="row"><div title="Code: 0x2605" class="the-icons span3"><i class="icon-star"></i> <span class="i-name">icon-star</span><span class="i-code">0x2605</span></div><div title="Code: 0x1f464" class="the-icons span3"><i class="icon-user"></i> <span class="i-name">icon-user</span><span class="i-code">0x1f464</span></div><div title="Code: 0x1f3ac" class="the-icons span3"><i class="icon-video"></i> <span class="i-name">icon-video</span><span class="i-code">0x1f3ac</span></div><div title="Code: 0x1f304" class="the-icons span3"><i class="icon-picture"></i> <span class="i-name">icon-picture</span><span class="i-code">0x1f304</span></div></div><div class="row"><div title="Code: 0x1f4f7" class="the-icons span3"><i class="icon-camera"></i> <span class="i-name">icon-camera</span><span class="i-code">0x1f4f7</span></div><div title="Code: 0x2713" class="the-icons span3"><i class="icon-ok"></i> <span class="i-name">icon-ok</span><span class="i-code">0x2713</span></div><div title="Code: 0x2714" class="the-icons span3"><i class="icon-ok-circle"></i> <span class="i-name">icon-ok-circle</span><span class="i-code">0x2714</span></div><div title="Code: 0x2715" class="the-icons span3"><i class="icon-cancel"></i> <span class="i-name">icon-cancel</span><span class="i-code">0x2715</span></div></div><div class="row"><div title="Code: 0x2716" class="the-icons span3"><i class="icon-cancel-circle"></i> <span class="i-name">icon-cancel-circle</span><span class="i-code">0x2716</span></div><div title="Code: 0x2b" class="the-icons span3"><i class="icon-plus"></i> <span class="i-name">icon-plus</span><span class="i-code">0x2b</span></div><div title="Code: 0x2795" class="the-icons span3"><i class="icon-plus-circle"></i> <span class="i-name">icon-plus-circle</span><span class="i-code">0x2795</span></div><div title="Code: 0x2d" class="the-icons span3"><i class="icon-minus"></i> <span class="i-name">icon-minus</span><span class="i-code">0x2d</span></div></div><div class="row"><div title="Code: 0x2796" class="the-icons span3"><i class="icon-minus-circle"></i> <span class="i-name">icon-minus-circle</span><span class="i-code">0x2796</span></div><div title="Code: 0x2753" class="the-icons span3"><i class="icon-help"></i> <span class="i-name">icon-help</span><span class="i-code">0x2753</span></div><div title="Code: 0x2139" class="the-icons span3"><i class="icon-info"></i> <span class="i-name">icon-info</span><span class="i-code">0x2139</span></div><div title="Code: 0x2302" class="the-icons span3"><i class="icon-home"></i> <span class="i-name">icon-home</span><span class="i-code">0x2302</span></div></div><div class="row"><div title="Code: 0x1f517" class="the-icons span3"><i class="icon-link"></i> <span class="i-name">icon-link</span><span class="i-code">0x1f517</span></div><div title="Code: 0x1f4ce" class="the-icons span3"><i class="icon-attach"></i> <span class="i-name">icon-attach</span><span class="i-code">0x1f4ce</span></div><div title="Code: 0x1f512" class="the-icons span3"><i class="icon-lock"></i> <span class="i-name">icon-lock</span><span class="i-code">0x1f512</span></div><div title="Code: 0xe708" class="the-icons span3"><i class="icon-lock-empty"></i> <span class="i-name">icon-lock-empty</span><span class="i-code">0xe708</span></div></div><div class="row"><div title="Code: 0x1f513" class="the-icons span3"><i class="icon-lock-open"></i> <span class="i-name">icon-lock-open</span><span class="i-code">0x1f513</span></div><div title="Code: 0xe709" class="the-icons span3"><i class="icon-lock-open-empty"></i> <span class="i-name">icon-lock-open-empty</span><span class="i-code">0xe709</span></div><div title="Code: 0x1f4cc" class="the-icons span3"><i class="icon-pin"></i> <span class="i-name">icon-pin</span><span class="i-code">0x1f4cc</span></div><div title="Code: 0xe70a" class="the-icons span3"><i class="icon-eye"></i> <span class="i-name">icon-eye</span><span class="i-code">0xe70a</span></div></div><div class="row"><div title="Code: 0xe70c" class="the-icons span3"><i class="icon-tag"></i> <span class="i-name">icon-tag</span><span class="i-code">0xe70c</span></div><div title="Code: 0xe70e" class="the-icons span3"><i class="icon-tag-empty"></i> <span class="i-name">icon-tag-empty</span><span class="i-code">0xe70e</span></div><div title="Code: 0x1f4e5" class="the-icons span3"><i class="icon-download"></i> <span class="i-name">icon-download</span><span class="i-code">0x1f4e5</span></div><div title="Code: 0x1f4e4" class="the-icons span3"><i class="icon-upload"></i> <span class="i-name">icon-upload</span><span class="i-code">0x1f4e4</span></div></div><div class="row"><div title="Code: 0xe710" class="the-icons span3"><i class="icon-download-cloud"></i> <span class="i-name">icon-download-cloud</span><span class="i-code">0xe710</span></div><div title="Code: 0xe711" class="the-icons span3"><i class="icon-upload-cloud"></i> <span class="i-name">icon-upload-cloud</span><span class="i-code">0xe711</span></div><div title="Code: 0x275d" class="the-icons span3"><i class="icon-quote-left"></i> <span class="i-name">icon-quote-left</span><span class="i-code">0x275d</span></div><div title="Code: 0x275e" class="the-icons span3"><i class="icon-quote-right"></i> <span class="i-name">icon-quote-right</span><span class="i-code">0x275e</span></div></div><div class="row"><div title="Code: 0x275b" class="the-icons span3"><i class="icon-quote-left-alt"></i> <span class="i-name">icon-quote-left-alt</span><span class="i-code">0x275b</span></div><div title="Code: 0x275c" class="the-icons span3"><i class="icon-quote-right-alt"></i> <span class="i-name">icon-quote-right-alt</span><span class="i-code">0x275c</span></div><div title="Code: 0x270e" class="the-icons span3"><i class="icon-pencil"></i> <span class="i-name">icon-pencil</span><span class="i-code">0x270e</span></div><div title="Code: 0x270f" class="the-icons span3"><i class="icon-pencil-neg"></i> <span class="i-name">icon-pencil-neg</span><span class="i-code">0x270f</span></div></div><div class="row"><div title="Code: 0x2710" class="the-icons span3"><i class="icon-pencil-alt"></i> <span class="i-name">icon-pencil-alt</span><span class="i-code">0x2710</span></div><div title="Code: 0x21b6" class="the-icons span3"><i class="icon-undo"></i> <span class="i-name">icon-undo</span><span class="i-code">0x21b6</span></div><div title="Code: 0xe718" class="the-icons span3"><i class="icon-comment"></i> <span class="i-name">icon-comment</span><span class="i-code">0xe718</span></div><div title="Code: 0xe719" class="the-icons span3"><i class="icon-comment-inv"></i> <span class="i-name">icon-comment-inv</span><span class="i-code">0xe719</span></div></div><div class="row"><div title="Code: 0xe71a" class="the-icons span3"><i class="icon-comment-alt"></i> <span class="i-name">icon-comment-alt</span><span class="i-code">0xe71a</span></div><div title="Code: 0xe71b" class="the-icons span3"><i class="icon-comment-inv-alt"></i> <span class="i-name">icon-comment-inv-alt</span><span class="i-code">0xe71b</span></div><div title="Code: 0xe71c" class="the-icons span3"><i class="icon-comment-alt2"></i> <span class="i-name">icon-comment-alt2</span><span class="i-code">0xe71c</span></div><div title="Code: 0xe71d" class="the-icons span3"><i class="icon-comment-inv-alt2"></i> <span class="i-name">icon-comment-inv-alt2</span><span class="i-code">0xe71d</span></div></div><div class="row"><div title="Code: 0xe720" class="the-icons span3"><i class="icon-chat"></i> <span class="i-name">icon-chat</span><span class="i-code">0xe720</span></div><div title="Code: 0xe721" class="the-icons span3"><i class="icon-chat-inv"></i> <span class="i-name">icon-chat-inv</span><span class="i-code">0xe721</span></div><div title="Code: 0xe724" class="the-icons span3"><i class="icon-location"></i> <span class="i-name">icon-location</span><span class="i-code">0xe724</span></div><div title="Code: 0xe725" class="the-icons span3"><i class="icon-location-inv"></i> <span class="i-name">icon-location-inv</span><span class="i-code">0xe725</span></div></div><div class="row"><div title="Code: 0xe726" class="the-icons span3"><i class="icon-location-alt"></i> <span class="i-name">icon-location-alt</span><span class="i-code">0xe726</span></div><div title="Code: 0xe728" class="the-icons span3"><i class="icon-compass"></i> <span class="i-name">icon-compass</span><span class="i-code">0xe728</span></div><div title="Code: 0xe729" class="the-icons span3"><i class="icon-trash"></i> <span class="i-name">icon-trash</span><span class="i-code">0xe729</span></div><div title="Code: 0xe72a" class="the-icons span3"><i class="icon-trash-empty"></i> <span class="i-name">icon-trash-empty</span><span class="i-code">0xe72a</span></div></div><div class="row"><div title="Code: 0xe730" class="the-icons span3"><i class="icon-doc"></i> <span class="i-name">icon-doc</span><span class="i-code">0xe730</span></div><div title="Code: 0xe731" class="the-icons span3"><i class="icon-doc-inv"></i> <span class="i-name">icon-doc-inv</span><span class="i-code">0xe731</span></div><div title="Code: 0xe732" class="the-icons span3"><i class="icon-doc-alt"></i> <span class="i-name">icon-doc-alt</span><span class="i-code">0xe732</span></div><div title="Code: 0xe733" class="the-icons span3"><i class="icon-doc-inv-alt"></i> <span class="i-name">icon-doc-inv-alt</span><span class="i-code">0xe733</span></div></div><div class="row"><div title="Code: 0xe734" class="the-icons span3"><i class="icon-article"></i> <span class="i-name">icon-article</span><span class="i-code">0xe734</span></div><div title="Code: 0xe735" class="the-icons span3"><i class="icon-article-alt"></i> <span class="i-name">icon-article-alt</span><span class="i-code">0xe735</span></div><div title="Code: 0x1f4d6" class="the-icons span3"><i class="icon-book-open"></i> <span class="i-name">icon-book-open</span><span class="i-code">0x1f4d6</span></div><div title="Code: 0x1f4c1" class="the-icons span3"><i class="icon-folder"></i> <span class="i-name">icon-folder</span><span class="i-code">0x1f4c1</span></div></div><div class="row"><div title="Code: 0x1f4c2" class="the-icons span3"><i class="icon-folder-empty"></i> <span class="i-name">icon-folder-empty</span><span class="i-code">0x1f4c2</span></div><div title="Code: 0x1f4e6" class="the-icons span3"><i class="icon-box"></i> <span class="i-name">icon-box</span><span class="i-code">0x1f4e6</span></div><div title="Code: 0xe73a" class="the-icons span3"><i class="icon-rss"></i> <span class="i-name">icon-rss</span><span class="i-code">0xe73a</span></div><div title="Code: 0xe73b" class="the-icons span3"><i class="icon-rss-alt"></i> <span class="i-name">icon-rss-alt</span><span class="i-code">0xe73b</span></div></div><div class="row"><div title="Code: 0x2699" class="the-icons span3"><i class="icon-cog"></i> <span class="i-name">icon-cog</span><span class="i-code">0x2699</span></div><div title="Code: 0x1f527" class="the-icons span3"><i class="icon-wrench"></i> <span class="i-name">icon-wrench</span><span class="i-code">0x1f527</span></div><div title="Code: 0xe73c" class="the-icons span3"><i class="icon-share"></i> <span class="i-name">icon-share</span><span class="i-code">0xe73c</span></div><div title="Code: 0x1f4c5" class="the-icons span3"><i class="icon-calendar"></i> <span class="i-name">icon-calendar</span><span class="i-code">0x1f4c5</span></div></div><div class="row"><div title="Code: 0xe73e" class="the-icons span3"><i class="icon-calendar-inv"></i> <span class="i-name">icon-calendar-inv</span><span class="i-code">0xe73e</span></div><div title="Code: 0x1f4c6" class="the-icons span3"><i class="icon-calendar-alt"></i> <span class="i-name">icon-calendar-alt</span><span class="i-code">0x1f4c6</span></div><div title="Code: 0x1f3a4" class="the-icons span3"><i class="icon-mic"></i> <span class="i-name">icon-mic</span><span class="i-code">0x1f3a4</span></div><div title="Code: 0x1f507" class="the-icons span3"><i class="icon-volume-off"></i> <span class="i-name">icon-volume-off</span><span class="i-code">0x1f507</span></div></div><div class="row"><div title="Code: 0x1f50a" class="the-icons span3"><i class="icon-volume-up"></i> <span class="i-name">icon-volume-up</span><span class="i-code">0x1f50a</span></div><div title="Code: 0x1f3a7" class="the-icons span3"><i class="icon-headphones"></i> <span class="i-name">icon-headphones</span><span class="i-code">0x1f3a7</span></div><div title="Code: 0x1f554" class="the-icons span3"><i class="icon-clock"></i> <span class="i-name">icon-clock</span><span class="i-code">0x1f554</span></div><div title="Code: 0x1f4a1" class="the-icons span3"><i class="icon-lamp"></i> <span class="i-name">icon-lamp</span><span class="i-code">0x1f4a1</span></div></div><div class="row"><div title="Code: 0x1f6ab" class="the-icons span3"><i class="icon-block"></i> <span class="i-name">icon-block</span><span class="i-code">0x1f6ab</span></div><div title="Code: 0xe744" class="the-icons span3"><i class="icon-resize-full"></i> <span class="i-name">icon-resize-full</span><span class="i-code">0xe744</span></div><div title="Code: 0xe745" class="the-icons span3"><i class="icon-resize-full-alt"></i> <span class="i-name">icon-resize-full-alt</span><span class="i-code">0xe745</span></div><div title="Code: 0xe746" class="the-icons span3"><i class="icon-resize-small"></i> <span class="i-name">icon-resize-small</span><span class="i-code">0xe746</span></div></div><div class="row"><div title="Code: 0xe747" class="the-icons span3"><i class="icon-resize-small-alt"></i> <span class="i-name">icon-resize-small-alt</span><span class="i-code">0xe747</span></div><div title="Code: 0x2b0c" class="the-icons span3"><i class="icon-resize-vertical"></i> <span class="i-name">icon-resize-vertical</span><span class="i-code">0x2b0c</span></div><div title="Code: 0x2b0d" class="the-icons span3"><i class="icon-resize-horizontal"></i> <span class="i-name">icon-resize-horizontal</span><span class="i-code">0x2b0d</span></div><div title="Code: 0xe74a" class="the-icons span3"><i class="icon-move"></i> <span class="i-name">icon-move</span><span class="i-code">0xe74a</span></div></div><div class="row"><div title="Code: 0xe74c" class="the-icons span3"><i class="icon-popup"></i> <span class="i-name">icon-popup</span><span class="i-code">0xe74c</span></div><div title="Code: 0x2193" class="the-icons span3"><i class="icon-down"></i> <span class="i-name">icon-down</span><span class="i-code">0x2193</span></div><div title="Code: 0x2190" class="the-icons span3"><i class="icon-left"></i> <span class="i-name">icon-left</span><span class="i-code">0x2190</span></div><div title="Code: 0x2192" class="the-icons span3"><i class="icon-right"></i> <span class="i-name">icon-right</span><span class="i-code">0x2192</span></div></div><div class="row"><div title="Code: 0x2191" class="the-icons span3"><i class="icon-up"></i> <span class="i-name">icon-up</span><span class="i-code">0x2191</span></div><div title="Code: 0xe4a4" class="the-icons span3"><i class="icon-down-circle"></i> <span class="i-name">icon-down-circle</span><span class="i-code">0xe4a4</span></div><div title="Code: 0xe4a1" class="the-icons span3"><i class="icon-left-circle"></i> <span class="i-name">icon-left-circle</span><span class="i-code">0xe4a1</span></div><div title="Code: 0xe4a2" class="the-icons span3"><i class="icon-right-circle"></i> <span class="i-name">icon-right-circle</span><span class="i-code">0xe4a2</span></div></div><div class="row"><div title="Code: 0xe4a3" class="the-icons span3"><i class="icon-up-circle"></i> <span class="i-name">icon-up-circle</span><span class="i-code">0xe4a3</span></div><div title="Code: 0x27f3" class="the-icons span3"><i class="icon-cw"></i> <span class="i-name">icon-cw</span><span class="i-code">0x27f3</span></div><div title="Code: 0x1f504" class="the-icons span3"><i class="icon-loop"></i> <span class="i-name">icon-loop</span><span class="i-code">0x1f504</span></div><div title="Code: 0x1f501" class="the-icons span3"><i class="icon-loop-alt"></i> <span class="i-name">icon-loop-alt</span><span class="i-code">0x1f501</span></div></div><div class="row"><div title="Code: 0x21c4" class="the-icons span3"><i class="icon-exchange"></i> <span class="i-name">icon-exchange</span><span class="i-code">0x21c4</span></div><div title="Code: 0x2387" class="the-icons span3"><i class="icon-split"></i> <span class="i-name">icon-split</span><span class="i-code">0x2387</span></div><div title="Code: 0x2935" class="the-icons span3"><i class="icon-arrow-curved"></i> <span class="i-name">icon-arrow-curved</span><span class="i-code">0x2935</span></div><div title="Code: 0x25b6" class="the-icons span3"><i class="icon-play"></i> <span class="i-name">icon-play</span><span class="i-code">0x25b6</span></div></div><div class="row"><div title="Code: 0xe048" class="the-icons span3"><i class="icon-play-circle2"></i> <span class="i-name">icon-play-circle2</span><span class="i-code">0xe048</span></div><div title="Code: 0x25aa" class="the-icons span3"><i class="icon-stop"></i> <span class="i-name">icon-stop</span><span class="i-code">0x25aa</span></div><div title="Code: 0x2389" class="the-icons span3"><i class="icon-pause"></i> <span class="i-name">icon-pause</span><span class="i-code">0x2389</span></div><div title="Code: 0x23ee" class="the-icons span3"><i class="icon-to-start"></i> <span class="i-name">icon-to-start</span><span class="i-code">0x23ee</span></div></div><div class="row"><div title="Code: 0x23ed" class="the-icons span3"><i class="icon-to-end"></i> <span class="i-name">icon-to-end</span><span class="i-code">0x23ed</span></div><div title="Code: 0x23cf" class="the-icons span3"><i class="icon-eject"></i> <span class="i-name">icon-eject</span><span class="i-code">0x23cf</span></div><div title="Code: 0x1f3af" class="the-icons span3"><i class="icon-target"></i> <span class="i-name">icon-target</span><span class="i-code">0x1f3af</span></div><div title="Code: 0x1f4f6" class="the-icons span3"><i class="icon-signal"></i> <span class="i-name">icon-signal</span><span class="i-code">0x1f4f6</span></div></div><div class="row"><div title="Code: 0x1f3c9" class="the-icons span3"><i class="icon-award"></i> <span class="i-name">icon-award</span><span class="i-code">0x1f3c9</span></div><div title="Code: 0xe764" class="the-icons span3"><i class="icon-award-empty"></i> <span class="i-name">icon-award-empty</span><span class="i-code">0xe764</span></div><div title="Code: 0xe765" class="the-icons span3"><i class="icon-list"></i> <span class="i-name">icon-list</span><span class="i-code">0xe765</span></div><div title="Code: 0xe766" class="the-icons span3"><i class="icon-list-nested"></i> <span class="i-name">icon-list-nested</span><span class="i-code">0xe766</span></div></div><div class="row"><div title="Code: 0xe772" class="the-icons span3"><i class="icon-bat-empty"></i> <span class="i-name">icon-bat-empty</span><span class="i-code">0xe772</span></div><div title="Code: 0xe773" class="the-icons span3"><i class="icon-bat-half"></i> <span class="i-name">icon-bat-half</span><span class="i-code">0xe773</span></div><div title="Code: 0xe774" class="the-icons span3"><i class="icon-bat-full"></i> <span class="i-name">icon-bat-full</span><span class="i-code">0xe774</span></div><div title="Code: 0xe775" class="the-icons span3"><i class="icon-bat-charge"></i> <span class="i-name">icon-bat-charge</span><span class="i-code">0xe775</span></div></div><div class="row"><div title="Code: 0x1f4f1" class="the-icons span3"><i class="icon-mobile"></i> <span class="i-name">icon-mobile</span><span class="i-code">0x1f4f1</span></div><div title="Code: 0x1f4bf" class="the-icons span3"><i class="icon-cd"></i> <span class="i-name">icon-cd</span><span class="i-code">0x1f4bf</span></div><div title="Code: 0xe795" class="the-icons span3"><i class="icon-equalizer"></i> <span class="i-name">icon-equalizer</span><span class="i-code">0xe795</span></div><div title="Code: 0xe796" class="the-icons span3"><i class="icon-cursor"></i> <span class="i-name">icon-cursor</span><span class="i-code">0xe796</span></div></div><div class="row"><div title="Code: 0xe797" class="the-icons span3"><i class="icon-aperture"></i> <span class="i-name">icon-aperture</span><span class="i-code">0xe797</span></div><div title="Code: 0xe798" class="the-icons span3"><i class="icon-aperture-alt"></i> <span class="i-name">icon-aperture-alt</span><span class="i-code">0xe798</span></div><div title="Code: 0xe799" class="the-icons span3"><i class="icon-steering-wheel"></i> <span class="i-name">icon-steering-wheel</span><span class="i-code">0xe799</span></div><div title="Code: 0x1f4d5" class="the-icons span3"><i class="icon-book"></i> <span class="i-name">icon-book</span><span class="i-code">0x1f4d5</span></div></div><div class="row"><div title="Code: 0x1f4d4" class="the-icons span3"><i class="icon-book-alt"></i> <span class="i-name">icon-book-alt</span><span class="i-code">0x1f4d4</span></div><div title="Code: 0xe79a" class="the-icons span3"><i class="icon-brush"></i> <span class="i-name">icon-brush</span><span class="i-code">0xe79a</span></div><div title="Code: 0xe79b" class="the-icons span3"><i class="icon-brush-alt"></i> <span class="i-name">icon-brush-alt</span><span class="i-code">0xe79b</span></div><div title="Code: 0xe79c" class="the-icons span3"><i class="icon-eyedropper"></i> <span class="i-name">icon-eyedropper</span><span class="i-code">0xe79c</span></div></div><div class="row"><div title="Code: 0xe79d" class="the-icons span3"><i class="icon-layers"></i> <span class="i-name">icon-layers</span><span class="i-code">0xe79d</span></div><div title="Code: 0xe79e" class="the-icons span3"><i class="icon-layers-alt"></i> <span class="i-name">icon-layers-alt</span><span class="i-code">0xe79e</span></div><div title="Code: 0x263c" class="the-icons span3"><i class="icon-sun"></i> <span class="i-name">icon-sun</span><span class="i-code">0x263c</span></div><div title="Code: 0x2600" class="the-icons span3"><i class="icon-sun-inv"></i> <span class="i-name">icon-sun-inv</span><span class="i-code">0x2600</span></div></div><div class="row"><div title="Code: 0x2601" class="the-icons span3"><i class="icon-cloud"></i> <span class="i-name">icon-cloud</span><span class="i-code">0x2601</span></div><div title="Code: 0x26c6" class="the-icons span3"><i class="icon-rain"></i> <span class="i-name">icon-rain</span><span class="i-code">0x26c6</span></div><div title="Code: 0x26a1" class="the-icons span3"><i class="icon-flash"></i> <span class="i-name">icon-flash</span><span class="i-code">0x26a1</span></div><div title="Code: 0x263e" class="the-icons span3"><i class="icon-moon"></i> <span class="i-name">icon-moon</span><span class="i-code">0x263e</span></div></div><div class="row"><div title="Code: 0xe7a0" class="the-icons span3"><i class="icon-moon-inv"></i> <span class="i-name">icon-moon-inv</span><span class="i-code">0xe7a0</span></div><div title="Code: 0x2602" class="the-icons span3"><i class="icon-umbrella"></i> <span class="i-name">icon-umbrella</span><span class="i-code">0x2602</span></div><div title="Code: 0x1f4ca" class="the-icons span3"><i class="icon-chart-bar"></i> <span class="i-name">icon-chart-bar</span><span class="i-code">0x1f4ca</span></div><div title="Code: 0xe7a2" class="the-icons span3"><i class="icon-chart-pie"></i> <span class="i-name">icon-chart-pie</span><span class="i-code">0xe7a2</span></div></div><div class="row"><div title="Code: 0xe7a3" class="the-icons span3"><i class="icon-chart-pie-alt"></i> <span class="i-name">icon-chart-pie-alt</span><span class="i-code">0xe7a3</span></div><div title="Code: 0x26bf" class="the-icons span3"><i class="icon-key"></i> <span class="i-name">icon-key</span><span class="i-code">0x26bf</span></div><div title="Code: 0x1f511" class="the-icons span3"><i class="icon-key-inv"></i> <span class="i-name">icon-key-inv</span><span class="i-code">0x1f511</span></div><div title="Code: 0x23" class="the-icons span3"><i class="icon-hash"></i> <span class="i-name">icon-hash</span><span class="i-code">0x23</span></div></div><div class="row"><div title="Code: 0x40" class="the-icons span3"><i class="icon-at"></i> <span class="i-name">icon-at</span><span class="i-code">0x40</span></div><div title="Code: 0xb6" class="the-icons span3"><i class="icon-pilcrow"></i> <span class="i-name">icon-pilcrow</span><span class="i-code">0xb6</span></div><div title="Code: 0xe7a4" class="the-icons span3"><i class="icon-dial"></i> <span class="i-name">icon-dial</span><span class="i-code">0xe7a4</span></div></div></div><div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div></body></html>
